@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tài liệu & Thư viện HS Workspace — Báo cáo kỹ thuật & Mã nguồn | Nhóm 8 · UEH</title>
+<meta name="description" content="Kho tài liệu chính thức của đồ án HS Workspace: Báo cáo cuối kỳ kỹ thuật, 7 Colab Notebooks, nghiên cứu tham chiếu quốc tế, tài liệu demo và kho mã nguồn.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23232226'/%3E%3Ctext x='30' y='42' font-size='26' text-anchor='middle' fill='%23FAF7F2' font-family='serif' font-weight='700'%3Ehs%3C/text%3E%3Ccircle cx='46' cy='40' r='5' fill='%23F3B5CB'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-grid">
+<div class="scroll-progress-bar"></div>
+<a class="skip" href="#noi-dung" data-vi="Bỏ qua thanh điều hướng" data-en="Skip to main content">Bỏ qua thanh điều hướng</a>
+
+<!-- TOP MARQUEE TICKER TAPE -->
+<div class="marquee-bar blue">
+ <div class="marquee-track">
+  <span>✦ THƯ VIỆN TÀI LIỆU HS WORKSPACE <i>/</i> BÁO CÁO CUỐI KỲ 10 CHƯƠNG <i>/</i> 7 COLAB NOTEBOOKS TÁI LẬP <i>/</i> 15 TÀI LIỆU THAM KHẢO APA 7 <i>/</i> GITHUB REPOSITORY</span>
+  <span>✦ THƯ VIỆN TÀI LIỆU HS WORKSPACE <i>/</i> BÁO CÁO CUỐI KỲ 10 CHƯƠNG <i>/</i> 7 COLAB NOTEBOOKS TÁI LẬP <i>/</i> 15 TÀI LIỆU THAM KHẢO APA 7 <i>/</i> GITHUB REPOSITORY</span>
+ </div>
+</div>
+
+<!-- SINGLE-TIER GLOBAL HEADER (No secondary navigation) -->
+<header class="site-header"><div class="container nav-row">
+ <a class="brand" href="index.html" aria-label="HS Workspace, về trang chủ">
+  <span class="brand-mark" aria-hidden="true">hs.</span>
+  <span class="brand-text"><b>HS Workspace</b><span>Nhóm 8 · UEH</span></span>
+ </a>
+ <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
+  <ul>
+   <li><a href="index.html" data-vi="Trang chủ" data-en="Home">Trang chủ</a></li>
+   <li><a href="product.html" data-vi="Sản phẩm" data-en="Product">Sản phẩm</a></li>
+   <li><a href="project-management.html" data-vi="Quản lý dự án" data-en="Project Management">Quản lý dự án</a></li>
+   <li><a href="resources.html" aria-current="page" data-vi="Tài liệu & Thư viện" data-en="Resources & Library">Tài liệu & Thư viện</a></li>
+  </ul>
+ </nav>
+ <div class="header-actions">
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Đổi giao diện sáng hoặc tối">
+   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
+  <a class="btn btn-pink" href="#final-report">✦ Báo cáo Cuối kỳ</a>
+  <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="main-nav">
+   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+ </div>
+</div></header>
+
+<main id="noi-dung">
+<!-- HERO SECTION (Warm Cream & Photography Collage) -->
+<section class="section section-cream"><div class="container hero-grid">
+ <div class="hero-content reveal">
+  <span class="eyebrow">✦ Thư viện học thuật</span>
+  <h1 class="editorial-title">
+   Kho Tài liệu, Báo cáo kỹ thuật và <span class="tape tape-blue">mã nguồn</span> dự án
+  </h1>
+  <p class="editorial-sub">
+   Tổng hợp đầy đủ Báo cáo cuối kỳ 10 chương đối chiếu Colab và ứng dụng v2.2.1, chuỗi 7 Colab Notebooks kiểm toán, các nghiên cứu khoa học quốc tế và liên kết mã nguồn mở.
+  </p>
+  <div class="hero-cta-group">
+   <a class="btn btn-primary" href="#final-report">✦ Báo cáo Cuối kỳ</a>
+   <a class="btn btn-outline" href="#technical">7 Colab Notebooks</a>
+   <a class="btn btn-outline" href="#research">Nghiên cứu tham chiếu</a>
+   <a class="btn btn-outline" href="#repository">Kho mã nguồn</a>
+  </div>
+ </div>
+
+ <div class="hero-visual reveal">
+  <div class="collage-frame">
+   <img src="assets/cargo-ships-docked-port-night_23-2152021803.avif" alt="Tàu chở hàng cập cảng xuất nhập khẩu ban đêm" style="width:100%;height:380px;object-fit:cover;border-radius:var(--r-lg)">
+  </div>
+  <div class="collage-badge-floating top-left">
+   <span class="sticker sticker-blue">★ BÁO CÁO V2.2.1</span>
+   <strong style="font-size:13px">13 Trang Kỹ thuật Chuyên sâu</strong>
+  </div>
+  <div class="collage-badge-floating bottom-right">
+   <span class="sticker sticker-pink">✓ 15 TRÍCH DẪN</span>
+   <strong style="font-size:13px">Chuẩn mực APA 7</strong>
+  </div>
+ </div>
+</div></section>
+
+<!-- SECTION 1: FINAL REPORT HIGHLIGHT (Soft Pink Section) -->
+<section class="section section-pink" id="final-report"><div class="container">
+ <div class="sec-head center reveal">
+  <span class="eyebrow">✦ Báo cáo nộp chính thức</span>
+  <h2>1. Báo cáo Cuối kỳ / Bản rà soát Kỹ thuật (04/11/2026)</h2>
+  <p>Tài liệu đối chiếu thực nghiệm toàn diện giữa môi trường nghiên cứu Colab và ứng dụng v2.2.1.</p>
+ </div>
+
+ <div class="card card-white reveal" style="padding:40px;box-shadow:var(--shadow-md);margin-bottom:32px">
+  <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:16px;border-bottom:2px solid var(--border);padding-bottom:20px;margin-bottom:24px">
+   <div>
+    <span class="sticker sticker-pink" style="margin-bottom:10px">Tài liệu thẩm định chính thức</span>
+    <h3 class="editorial-serif" style="font-size:30px;margin:0">BÁO CÁO CUỐI KỲ: HS WORKSPACE — HỖ TRỢ QUYẾT ĐỊNH PHÂN LOẠI HS VÀ LƯU CĂN CỨ GIẢI TRÌNH</h3>
+    <div style="font-size:14px;color:var(--ink-muted);margin-top:6px">Nhóm 8 · Ngày khóa dữ liệu: 04/11/2026 · Định dạng PDF 13 trang kỹ thuật</div>
+   </div>
+   <span class="sticker sticker-mint">Đã đối chiếu Colab & App v2.2.1</span>
+  </div>
+
+  <div class="card-grid-2">
+   <div class="card card-pink">
+    <b>Chương 01 · Nghiệp vụ phân loại</b>
+    <p style="font-size:14px;margin:4px 0 0">Quyết định phân loại, trách nhiệm người khai theo Điều 18 Luật Hải quan, nghĩa vụ giải trình 5 năm theo Điều 77, hiệu lực văn bản là một trường dữ liệu có phiên bản.</p>
+   </div>
+   <div class="card card-blue">
+    <b>Chương 02 · Hiểu biết kinh doanh (Business Understanding)</b>
+    <p style="font-size:14px;margin:4px 0 0">Kim ngạch XNK 930,05 tỷ USD; 60,43% câu hỏi Chatbot Hải quan về mã HS; AI Canvas, mô hình kinh tế đơn vị NPV (hòa vốn tại 28 tài khoản) và 3 KPI pilot.</p>
+   </div>
+   <div class="card card-mint">
+    <b>Chương 03 · Dữ liệu (Data Understanding & Prep)</b>
+    <p style="font-size:14px;margin:4px 0 0">Kiểm toán 961 văn bản thông báo, khử rò rỉ nhãn trong phần mô tả, khắc phục lỗi đọc kiểu số thực Pandas (mất số 0 đầu), khóa cohort đóng băng 605 hồ sơ.</p>
+   </div>
+   <div class="card card-lavender">
+    <b>Chương 04 · Kiến trúc hệ thống & Hợp đồng Artifact</b>
+    <p style="font-size:14px;margin:4px 0 0">Kiến trúc v2.2.1: Giao diện Streamlit, API FastAPI /api/v2, Kho tri thức V5 gồm 409 văn bản lập chỉ mục SQLite FTS5; cơ chế tra cứu mặc định BM25.</p>
+   </div>
+   <div class="card card-butter">
+    <b>Chương 05 · Đánh giá & Đối chứng mô hình</b>
+    <p style="font-size:14px;margin:4px 0 0">Đánh giá trên 94 ca test: HS8 Top-1 đạt 24/94 (khoảng Wilson 95%: 17,80% – 35,19%); HS4 Top-3 đạt 66/94; thử nghiệm 12 cấu hình LambdaRank CPU (NB05).</p>
+   </div>
+   <div class="card card-pink">
+    <b>Chương 06 · Prototype & Luồng người dùng có điểm dừng</b>
+    <p style="font-size:14px;margin:4px 0 0">Quy trình 6 bước bám sát thực tế: dừng khi thiếu thuộc tính, khóa ưu đãi khi thiếu FTA, cơ chế chặn tự duyệt và đóng gói snapshot ZIP phục vụ 5 năm.</p>
+   </div>
+   <div class="card card-blue">
+    <b>Chương 07 · Vận hành & Tiêu chí nghiệm thu</b>
+    <p style="font-size:14px;margin:4px 0 0">Quy trình tái lập 5 bước; bài học kỹ thuật từ thử nghiệm pilot Qwen n=12 ca trên Notebook 07 dừng do trích dẫn mô tả không đối chiếu được chính xác.</p>
+   </div>
+   <div class="card card-mint">
+    <b>Chương 08 · Khung phương pháp CPMAI</b>
+    <p style="font-size:14px;margin:4px 0 0">Lộ trình 8 tuần qua 6 giai đoạn chuẩn; thiết kế thử nghiệm pilot với endpoint chính là thời gian xử lý ròng và endpoint an toàn là tỷ lệ bỏ sót chính sách.</p>
+   </div>
+   <div class="card card-lavender">
+    <b>Chương 09 · Quản trị rủi ro & Cổng Go/No-Go</b>
+    <p style="font-size:14px;margin:4px 0 0">Bảng đánh giá 5 nhóm rủi ro trọng yếu; điều kiện Go/No-Go nghiêm ngặt: NO-GO cho tự động chốt mã HS8, GO CÓ ĐIỀU KIỆN cho hỗ trợ tra cứu có người duyệt.</p>
+   </div>
+   <div class="card card-butter">
+    <b>Chương 10 · Kết luận & Danh mục tài liệu tham khảo</b>
+    <p style="font-size:14px;margin:4px 0 0">Nơi đầu tư kỹ thuật tiếp theo; định hướng mở rộng ứng viên và 15 tài liệu tham khảo chính thức trích dẫn chuẩn APA 7.</p>
+   </div>
+  </div>
+
+  <div class="callout mint reveal" style="margin-top:28px">
+   <strong>Tóm lược Kết luận điều hành:</strong>
+   Bản Colab mới nhất xác nhận M0 hữu ích để thu hẹp phạm vi tra cứu (HS8 đầu tiên khớp nhãn ở 24/94 ca test có dữ liệu, với khoảng Wilson 95% từ 17,80% đến 35,19%). Khi tính trên cohort đóng băng, kết quả là 24/109. Có 0/51 ca đúng ở các mã HS8 chưa thấy trong tập học. Nhóm quyết định tách luồng tra cứu, phân tích hệ quả và lưu hồ sơ ra khỏi xếp hạng HS8. App v2.2.1 vẫn chạy tra cứu BM25 mặc định và sử dụng như công cụ hỗ trợ trong pilot có kiểm soát với người chịu trách nhiệm duyệt.
+  </div>
+ </div>
+</div></section>
+
+<!-- SECTION 2: RESEARCH & MARKET ANALYSIS (Warm Cream) -->
+<section class="section section-cream" id="research"><div class="container">
+ <div class="sec-head center reveal">
+  <span class="eyebrow">✦ Nghiên cứu học thuật</span>
+  <h2>2. Nghiên cứu tham chiếu và phân tích thị trường</h2>
+  <p>Các công trình nghiên cứu khoa học quốc tế định hình phương pháp luận và cơ chế kiểm soát rủi ro của HS Workspace.</p>
+ </div>
+
+ <div class="card-grid-3">
+  <div class="card card-pink reveal">
+   <span class="sticker sticker-pink" style="align-self:flex-start;margin-bottom:12px">Kinh tế lượng</span>
+   <h3>Fisman & Wei (2004)</h3>
+   <p>Nghiên cứu đăng trên <i>Journal of Political Economy</i> chỉ ra hiện tượng khai lệch mã số có tương quan trực tiếp với mức độ chênh lệch thuế suất. Dự án sử dụng kết quả này để thiết kế mô-đun cảnh báo hệ quả thuế.</p>
+   <div style="margin-top:auto;font-size:12.5px;color:var(--ink-muted)">DOI: 10.1086/381476</div>
+  </div>
+
+  <div class="card card-blue reveal">
+   <span class="sticker sticker-blue" style="align-self:flex-start;margin-bottom:12px">Tương tác Người - AI</span>
+   <h3>Buçinca et al. (2021)</h3>
+   <p>Nghiên cứu tại <i>ACM CSCW</i> về hội chứng lạm dụng/quá tin vào AI (Overreliance). Nhóm áp dụng phát hiện này để thiết kế checklist bắt buộc người dùng giải trình lý do loại mã và cơ chế chặn tự động duyệt.</p>
+   <div style="margin-top:auto;font-size:12.5px;color:var(--ink-muted)">DOI: 10.1145/3449287</div>
+  </div>
+
+  <div class="card card-mint reveal">
+   <span class="sticker sticker-mint" style="align-self:flex-start;margin-bottom:12px">Benchmark ACL 2026</span>
+   <h3>Lan et al. (ACL 2026)</h3>
+   <p>Công bố bộ benchmark phân loại mã HS đa tầng cấp chuyên gia (HSCodeComp). Cung cấp thiết kế đối chuẩn cho đánh giá phân cấp, khẳng định tầm quan trọng của việc kiểm tra theo từng bậc.</p>
+   <div style="margin-top:auto;font-size:12.5px;color:var(--ink-muted)">ACL Anthology: 2026.acl-long.937</div>
+  </div>
+
+  <div class="card card-lavender reveal">
+   <span class="sticker sticker-lavender" style="align-self:flex-start;margin-bottom:12px">Khả năng giải thích</span>
+   <h3>Lee et al. (2024)</h3>
+   <p>Nghiên cứu về phương pháp phân loại hàng hóa hải quan có khả năng giải thích (Explainable Classification). Hỗ trợ nhóm thiết kế phiếu phân loại có trích dẫn số trang nguồn từ các văn bản pháp lý.</p>
+   <div style="margin-top:auto;font-size:12.5px;color:var(--ink-muted)">DOI: 10.1145/3635158</div>
+  </div>
+
+  <div class="card card-butter reveal">
+   <span class="sticker sticker-butter" style="align-self:flex-start;margin-bottom:12px">Số liệu vĩ mô</span>
+   <h3>Thống kê Hải quan 2025–2026</h3>
+   <p>Tổng kim ngạch XNK 930,05 tỷ USD (NSO 2026). Thống kê kênh hỗ trợ Hải quan ghi nhận 53.601 câu hỏi, trong đó 60,43% tập trung vào mã HS và chính sách thuế mặt hàng.</p>
+   <div style="margin-top:auto;font-size:12.5px;color:var(--ink-muted)">Cục Thống kê & Bộ Tài chính</div>
+  </div>
+
+  <div class="card card-pink reveal">
+   <span class="sticker sticker-pink" style="align-self:flex-start;margin-bottom:12px">Khảo sát đối chứng</span>
+   <h3>Đánh giá công cụ hiện có</h3>
+   <p>Khảo sát đối chứng năng lực giữa ECUS.AI (Thái Sơn), Avenir và quy trình thủ công Excel. Xác nhận giả thuyết khác biệt của HS Workspace ở khâu phân tích hệ quả và quản lý hồ sơ giải trình.</p>
+   <div style="margin-top:auto;font-size:12.5px;color:var(--ink-muted)">Nghiên cứu nội bộ Nhóm 8</div>
+  </div>
+ </div>
+</div></section>
+
+<!-- SECTION 3: TECHNICAL & NOTEBOOKS (Dark Section) -->
+<section class="section-dark" id="technical"><div class="container">
+ <div class="sec-head reveal">
+  <span class="eyebrow" style="background:#28272E;color:#FFFFFF;border-color:rgba(255,255,255,0.2)">✦ KHẢ NĂNG TÁI LẬP KỸ THUẬT</span>
+  <h2 class="editorial-serif" style="font-size:clamp(32px,3.8vw,52px)">
+   3. Chuỗi bảy <span class="tape tape-blue">Colab Notebooks</span> thực nghiệm & kiểm toán
+  </h2>
+  <p style="color:#B5B2BE">
+   Toàn bộ mã nguồn thực nghiệm, xử lý dữ liệu và kiểm chứng mô hình được lưu trữ minh bạch.
+  </p>
+ </div>
+
+ <div class="table-wrap reveal" style="background:#232228;border-color:rgba(255,255,255,0.15)">
+  <table>
+   <thead>
+    <tr style="background:#1B1A1F">
+     <th style="color:#FFFFFF">Notebook</th>
+     <th style="color:#FFFFFF">Mục tiêu kỹ thuật & Tác vụ</th>
+     <th style="color:#FFFFFF">Đầu vào / Dữ liệu</th>
+     <th style="color:#FFFFFF">Đầu ra & Kết quả đạt được</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td><b style="color:#FFFFFF">Notebook 01</b></td>
+     <td style="color:#D4D2DB">Đọc thông báo, chia split thời gian, trích xuất embedding BGE-M3, tạo đặc trưng</td>
+     <td style="color:#D4D2DB">961 văn bản thông báo + Biểu thuế 2026</td>
+     <td style="color:#D4D2DB">Xuất scaler, ranker, từ điển đặc trưng và khóa manifest artifact</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">Notebook 02</b></td>
+     <td style="color:#D4D2DB">Xây dựng mô hình đối chứng nghiên cứu và xuất kết quả xếp hạng ứng viên</td>
+     <td style="color:#D4D2DB">Vector đặc trưng từ NB01</td>
+     <td style="color:#D4D2DB">Thiết lập baseline M0 và các bảng đối chứng chuẩn</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">Notebook 03</b></td>
+     <td style="color:#D4D2DB">Chấm điểm trên mẫu số đóng băng và sửa lỗi ép kiểu số thực Pandas</td>
+     <td style="color:#D4D2DB">Cohort 605 hồ sơ (94 ca test)</td>
+     <td style="color:#D4D2DB">Khắc phục lỗi 0/109 thành 24/109 (24/94 ca có dữ liệu)</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">Notebook 04</b></td>
+     <td style="color:#D4D2DB">Kiểm tra tính toàn vẹn nguồn văn bản và tệp chứng từ đính kèm</td>
+     <td style="color:#D4D2DB">Kho tri thức V5 & tệp PDF</td>
+     <td style="color:#D4D2DB">Xác thực băm SHA-256 và cấu trúc bảng SQLite FTS5</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">Notebook 05</b></td>
+     <td style="color:#D4D2DB">Thực nghiệm huấn luyện mô hình LambdaRank CPU tìm challenger</td>
+     <td style="color:#D4D2DB">12 cấu hình siêu tham số</td>
+     <td style="color:#D4D2DB">Cấu hình tốt nhất đạt 22/94 ca test (không vượt M0, McNemar p=0,754)</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">Notebook 06</b></td>
+     <td style="color:#D4D2DB">Mở rộng không gian truy hồi và lưu trữ bộ ứng viên tiềm năng</td>
+     <td style="color:#D4D2DB">Tập hợp nhất BM25 + Vector</td>
+     <td style="color:#D4D2DB">Độ phủ nhãn đạt 81/94 tại K=200 (tăng 8 ca so với M0 đơn lẻ)</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">Notebook 07</b></td>
+     <td style="color:#D4D2DB">Chạy pilot mô hình ngôn ngữ cục bộ (Qwen n=12 ca) trên validation</td>
+     <td style="color:#D4D2DB">12 ca kiểm thử có neo ID đoạn</td>
+     <td style="color:#D4D2DB">Chấp nhận 0, từ chối 5, hỏi lại 7; rút ra bài học kiểm soát trích dẫn</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</div></section>
+
+<!-- SECTION 4: REPOSITORY & LINKS (Mint Section) -->
+<section class="section section-mint" id="repository"><div class="container">
+ <div class="sec-head center reveal">
+  <span class="eyebrow">✦ Kho lưu trữ dự án</span>
+  <h2>4. Kho mã nguồn & Liên kết dữ liệu đám mây</h2>
+  <p>Toàn bộ tài nguyên của dự án được lưu trữ và quản lý thống nhất phục vụ công tác thẩm định.</p>
+ </div>
+
+ <div class="card-grid-3">
+  <div class="card card-white reveal">
+   <span class="sticker sticker-mint" style="align-self:flex-start;margin-bottom:12px">Mã nguồn GitHub</span>
+   <h3>GitHub Repository HS Workspace</h3>
+   <p>Chứa toàn bộ mã nguồn website tĩnh (thư mục <code>/docs</code> phục vụ GitHub Pages), mã nguồn ứng dụng FastAPI / Streamlit và hướng dẫn cài đặt.</p>
+   <div style="margin-top:auto"><span class="sticker sticker-mint">Nhánh main /docs</span></div>
+  </div>
+
+  <div class="card card-white reveal">
+   <span class="sticker sticker-blue" style="align-self:flex-start;margin-bottom:12px">Google Drive Website</span>
+   <h3>Thư mục mã nguồn website gốc</h3>
+   <p>Thư mục Google Drive lưu trữ bản sao mã nguồn website và tài nguyên đồ họa gốc của đồ án.</p>
+   <div style="margin-top:auto">
+    <a href="https://drive.google.com/drive/folders/1hTPICTGkWxjocC573Cqpt7221QUGrujD?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline" style="width:100%">Mở Google Drive →</a>
+   </div>
+  </div>
+
+  <div class="card card-white reveal">
+   <span class="sticker sticker-pink" style="align-self:flex-start;margin-bottom:12px">Google Drive Tài liệu</span>
+   <h3>Thư mục tài liệu bổ sung dự án</h3>
+   <p>Thư mục Google Drive tập trung các tài liệu phân tích thị trường, mô hình kinh doanh, AI Canvas, file dữ liệu và biên bản họp gốc.</p>
+   <div style="margin-top:auto">
+    <a href="https://drive.google.com/drive/folders/1YkC0pJwq3eOj7BrVgGOWJ4xJ7y0NZmkN?usp=drive_link" target="_blank" rel="noopener" class="btn btn-outline" style="width:100%">Mở Google Drive →</a>
+   </div>
+  </div>
+ </div>
+
+ <div class="callout reveal" style="margin-top:24px">
+  <strong>Ghi chú về tính khả dụng của liên kết đám mây:</strong>
+  Trong môi trường máy chủ cô lập hoặc môi trường chấm bài ngoại tuyến, nếu quý Giảng viên không truy cập được Google Drive trực tiếp do chính sách phân quyền mạng, toàn bộ nội dung cốt lõi của Báo cáo cuối kỳ kỹ thuật, AI Canvas, Data Audit, Risk Register, System Card và mã nguồn website đều đã được tích hợp đầy đủ và hiển thị trọn vẹn ngay trên website HS Workspace này.
+ </div>
+</div></section>
+
+<!-- SECTION 5: OFFICIAL REFERENCES APA 7 (Warm Cream) -->
+<section class="section section-cream" id="references"><div class="container">
+ <div class="sec-head reveal">
+  <span class="eyebrow">✦ Trích dẫn khoa học</span>
+  <h2>5. Danh mục 15 tài liệu tham khảo chính thức (APA 7)</h2>
+  <p>Văn bản pháp lý hải quan và các công trình nghiên cứu được trích dẫn trong Báo cáo cuối kỳ ngày 04/11/2026.</p>
+ </div>
+
+ <div class="card card-white reveal" style="padding:32px">
+  <ol style="margin:0;padding-left:1.4em;line-height:1.75;font-size:14px;color:var(--ink-secondary)">
+   <li style="margin-bottom:8px">Quốc hội. (2014). <i>Luật Hải quan</i> (Luật số 54/2014/QH13), Điều 18 và Điều 77. Văn bản hợp nhất số 54/VBHN-VPQH. <a href="https://congbao.chinhphu.vn/van-ban/van-ban-hop-nhat-so-54-vbhn-vpqh-469184.htm" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">congbao.chinhphu.vn</a></li>
+   <li style="margin-bottom:8px">Chính phủ. (2026). <i>Nghị định 169/2026/NĐ-CP quy định chi tiết thi hành một số điều của Luật Hải quan</i>. <a href="https://congbao.chinhphu.vn/van-ban/nghi-dinh-so-169-2026-nd-cp-469561.htm" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">congbao.chinhphu.vn</a></li>
+   <li style="margin-bottom:8px">Quốc hội. (2026). <i>Luật số 11/2026/QH16 sửa đổi, bổ sung một số điều của Luật Hải quan</i>. <a href="https://congbao.chinhphu.vn/van-ban/luat-so-11-2026-qh16-470446/68452.htm" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">congbao.chinhphu.vn</a></li>
+   <li style="margin-bottom:8px">Bộ Tài chính. (2025). <i>Thông tư 121/2025/TT-BTC hướng dẫn về phân loại hàng hóa xuất khẩu, nhập khẩu</i>. <a href="https://vanban.chinhphu.vn/?docid=216623&pageid=27160" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">vanban.chinhphu.vn</a></li>
+   <li style="margin-bottom:8px">Cục Thống kê. (2026). <i>Thông cáo tình hình kinh tế – xã hội quý IV và năm 2025</i>. <a href="https://www.nso.gov.vn/du-lieu-va-so-lieu-thong-ke/2026/01/thong-cao-bao-chi-tinh-hinh-kinh-te-xa-hoi-quy-iv-va-nam-2025/" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">nso.gov.vn</a></li>
+   <li style="margin-bottom:8px">Bộ Tài chính. (2026). <i>Thống kê kênh hỗ trợ hải quan và cơ cấu chủ đề hỏi đáp về phân loại mã HS</i>. <a href="https://mof.gov.vn/ttcg/tin-tuc/hien-thuc-hoa-chien-luoc-ai-first-va-chuyen-dich-ha-tang-toan-dien" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">mof.gov.vn</a></li>
+   <li style="margin-bottom:8px">Fisman, R., & Wei, S.-J. (2004). Tax rates and tax evasion: Evidence from “missing imports” in China. <i>Journal of Political Economy</i>, 112(2), 471–496. <a href="https://doi.org/10.1086/381476" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">doi.org/10.1086/381476</a></li>
+   <li style="margin-bottom:8px">Buçinca, Z., Malaya, M. B., & Gajos, K. Z. (2021). To trust or to think: cognitive forcing functions can reduce overreliance on AI in AI-assisted decision-making. <i>Proceedings of the ACM on Human-Computer Interaction</i>, 5(CSCW1), 1–21. <a href="https://doi.org/10.1145/3449287" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">doi.org/10.1145/3449287</a></li>
+   <li style="margin-bottom:8px">Công ty Cổ phần Công nghệ Thái Sơn. (2026). <i>Giới thiệu giải pháp ECUS.AI trong xử lý mã HS và tờ khai hải quan</i>. <a href="https://ecus.vn/tin-tuc/ecus-ai" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">ecus.vn</a></li>
+   <li style="margin-bottom:8px">Avenir. (2026). <i>Mô tả năng lực tra cứu mã HS và đối chiếu thuế suất</i>. <a href="https://www.avenir.vn/cong-cu/tra-cuu-hs" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">avenir.vn</a></li>
+   <li style="margin-bottom:8px">Bộ Tài chính. (2022). <i>Thông tư 31/2022/TT-BTC ban hành Danh mục hàng hóa xuất khẩu, nhập khẩu Việt Nam</i>. Công báo số 543–544/2022, trang 2–11. <a href="https://congbao.cdnchinhphu.vn/CongBaoCP/VanBan/2022/6/37431/41035-1-2022543-54431-2022-tt-btc.pdf" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">congbao.cdnchinhphu.vn</a></li>
+   <li style="margin-bottom:8px">HSCode_AIProject. (2026). <i>multilevel_v5_20261103_174530 và manifest artifact e3eacfecb3274aa50d0b67d9daf947a9e6859f4684008aa9b7664ddba3f5fc83</i>. Dữ liệu Colab lưu ngày 03/11 UTC.</li>
+   <li style="margin-bottom:8px">Nhóm 8. (2026). <i>Phản hồi chuyên gia nghiệp vụ qua thư; năm tài liệu phân tích nội bộ về phân khúc, mô hình giá, KPI và cổng thương mại hóa</i>. Lưu trữ nội bộ đồ án.</li>
+   <li style="margin-bottom:8px">Lan, T., Yang, Y., Jia, Q., Zhu, L., Jiang, H., Zhu, H., Luo, W., & Wang, L. (2026). HSCodeComp: A realistic and expert-level agent benchmark for hierarchical rule application. <i>Proceedings of ACL 2026</i>. <a href="https://aclanthology.org/2026.acl-long.937/" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">aclanthology.org</a></li>
+   <li style="margin-bottom:8px">Lee, S., et al. (2024). Explainable Product Classification for Customs. <i>ACM Transactions on Management Information Systems</i>, 15(2), 1–24. <a href="https://doi.org/10.1145/3635158" target="_blank" rel="noopener" style="color:var(--ink);text-decoration:underline">doi.org/10.1145/3635158</a></li>
+  </ol>
+ </div>
+</div></section>
+</main>
+
+<!-- SITE FOOTER -->
+<footer class="site-footer"><div class="container">
+ <div class="footer-grid">
+  <div>
+   <div class="footer-brand" style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+    <span class="brand-mark" style="background:#FFFFFF;color:#18171C">hs.</span>
+    <b>HS Workspace</b>
+   </div>
+   <p>Nền tảng hỗ trợ quyết định phân loại mã HS và quản lý căn cứ giải trình cho doanh nghiệp xuất nhập khẩu Việt Nam. Đồ án học phần Dự án Trí tuệ Nhân tạo, UEH.</p>
+  </div>
+  <div>
+   <h2 data-vi="Khu vực website" data-en="Site Navigation">Khu vực website</h2>
+   <ul>
+    <li><a href="index.html" data-vi="Trang chủ" data-en="Home">Trang chủ</a></li>
+    <li><a href="product.html" data-vi="Sản phẩm" data-en="Product">Sản phẩm</a></li>
+    <li><a href="project-management.html" data-vi="Quản lý dự án" data-en="Project Management">Quản lý dự án</a></li>
+    <li><a href="resources.html" data-vi="Tài liệu & Thư viện" data-en="Resources & Library">Tài liệu & Thư viện</a></li>
+   </ul>
+  </div>
+  <div>
+   <h2>Thông tin đồ án</h2>
+   <ul>
+    <li>Học phần: Dự án Trí tuệ Nhân tạo</li>
+    <li>Mã lớp học phần: 26C1TEC55001302</li>
+    <li>Giảng viên: ThS. Tạ Việt Phương</li>
+    <li>Đại học Kinh tế TP. Hồ Chí Minh (UEH)</li>
+    <li>Báo cáo đối chiếu Colab và app v2.2.1</li>
+   </ul>
+  </div>
+  <div>
+   <h2>Lưu ý trách nhiệm pháp lý</h2>
+   <p style="font-size:13.5px;line-height:1.6">Kết quả từ mô hình AI chỉ mang tính chất tham khảo, hỗ trợ tra cứu và thu thập căn cứ. Người khai hải quan và chuyên viên tuân thủ chịu trách nhiệm hoàn toàn trước pháp luật theo Điều 18 và Điều 77 Luật Hải quan 2014.</p>
+  </div>
+ </div>
+ <div class="footer-bottom">
+  <span>Cập nhật: 04/11/2026 · Phiên bản v2.2.1</span>
+  <span>Nhóm 8: Nguyễn Đức Minh (Lead/AI), Vương Nguyễn Ngọc Hân (PO), Huỳnh Kỳ Quế (Research), Đậu Thị Khánh Linh (Scrum/Gov)</span>
+ </div>
+</div></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>

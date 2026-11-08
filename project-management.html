@@ -1,0 +1,956 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Quản lý dự án HS Workspace — Khung CPMAI 8 tuần & Hồ sơ quản trị | Nhóm 8 · UEH</title>
+<meta name="description" content="Hồ sơ quản lý dự án HS Workspace theo phương pháp luận CPMAI: Project Charter, Đội ngũ, Timeline 8 tuần, Backlog, Biên bản họp, RACI Matrix, AI Canvas, Data Audit, Risk Register và System Card.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23232226'/%3E%3Ctext x='30' y='42' font-size='26' text-anchor='middle' fill='%23FAF7F2' font-family='serif' font-weight='700'%3Ehs%3C/text%3E%3Ccircle cx='46' cy='40' r='5' fill='%23F3B5CB'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="bg-grid">
+<div class="scroll-progress-bar"></div>
+<a class="skip" href="#noi-dung" data-vi="Bỏ qua thanh điều hướng" data-en="Skip to main content">Bỏ qua thanh điều hướng</a>
+
+<!-- TOP MARQUEE TICKER TAPE -->
+<div class="marquee-bar mint">
+ <div class="marquee-track">
+  <span>✦ HỒ SƠ QUẢN LÝ DỰ ÁN HS WORKSPACE <i>/</i> COGNITIVE PROJECT MANAGEMENT FOR AI (CPMAI) <i>/</i> DATA AUDIT 605 HỒ SƠ <i>/</i> RISK REGISTER & CỔNG GO/NO-GO <i>/</i> AI SYSTEM CARD</span>
+  <span>✦ HỒ SƠ QUẢN LÝ DỰ ÁN HS WORKSPACE <i>/</i> COGNITIVE PROJECT MANAGEMENT FOR AI (CPMAI) <i>/</i> DATA AUDIT 605 HỒ SƠ <i>/</i> RISK REGISTER & CỔNG GO/NO-GO <i>/</i> AI SYSTEM CARD</span>
+ </div>
+</div>
+
+<!-- SINGLE-TIER GLOBAL HEADER (No secondary navigation) -->
+<header class="site-header"><div class="container nav-row">
+ <a class="brand" href="index.html" aria-label="HS Workspace, về trang chủ">
+  <span class="brand-mark" aria-hidden="true">hs.</span>
+  <span class="brand-text"><b>HS Workspace</b><span>Nhóm 8 · UEH</span></span>
+ </a>
+ <nav class="main-nav" id="main-nav" aria-label="Điều hướng chính">
+  <ul>
+   <li><a href="index.html" data-vi="Trang chủ" data-en="Home">Trang chủ</a></li>
+   <li><a href="product.html" data-vi="Sản phẩm" data-en="Product">Sản phẩm</a></li>
+   <li><a href="project-management.html" aria-current="page" data-vi="Quản lý dự án" data-en="Project Management">Quản lý dự án</a></li>
+   <li><a href="resources.html" data-vi="Tài liệu & Thư viện" data-en="Resources & Library">Tài liệu & Thư viện</a></li>
+  </ul>
+ </nav>
+ <div class="header-actions">
+  <button class="icon-btn" id="theme-btn" type="button" aria-label="Đổi giao diện sáng hoặc tối">
+   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+  </button>
+  <a class="btn btn-pink" href="resources.html#final-report">✦ Xem Báo cáo</a>
+  <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Mở menu điều hướng" aria-expanded="false" aria-controls="main-nav">
+   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+  </button>
+ </div>
+</div></header>
+
+<main id="noi-dung">
+<!-- HERO SECTION (Warm Cream & Editorial Header) -->
+<section class="section section-cream" id="charter"><div class="container hero-grid">
+ <div class="hero-content reveal">
+  <span class="eyebrow">✦ Quản trị dự án AI</span>
+  <h1 class="editorial-title">
+   Hồ sơ Quản lý Dự án theo chuẩn <span class="tape tape-mint">CPMAI</span> và kỷ luật <span class="tape tape-blue">dữ liệu</span>
+  </h1>
+  <p class="editorial-sub">
+   Toàn bộ tiến trình tổ chức, triển khai và kiểm soát dự án HS Workspace qua 8 tuần và 5 Sprint. Đảm bảo tính khoa học, khả năng tái lập thực nghiệm và minh bạch đạo đức AI.
+  </p>
+  <div class="hero-cta-group">
+   <a class="btn btn-primary" href="#team">✦ Đội ngũ & Thỏa thuận</a>
+   <a class="btn btn-outline" href="#timeline">Lộ trình CPMAI</a>
+   <a class="btn btn-outline" href="#backlog">Product Backlog</a>
+   <a class="btn btn-outline" href="#ai-canvas">AI Canvas</a>
+  </div>
+ </div>
+
+ <div class="hero-visual reveal">
+  <div class="collage-frame">
+   <img src="assets/istockphoto-476502554-612x612.jpg" alt="Kiểm tra hàng hóa và dữ liệu hải quan" style="width:100%;height:380px;object-fit:cover;border-radius:var(--r-lg)">
+  </div>
+  <div class="collage-badge-floating top-left">
+   <span class="sticker sticker-mint">★ CHUẨN CPMAI</span>
+   <strong style="font-size:13px">6 Giai đoạn & 5 Sprint</strong>
+  </div>
+  <div class="collage-badge-floating bottom-right">
+   <span class="sticker sticker-pink">✓ DATA AUDIT</span>
+   <strong style="font-size:13px">Cohort đóng băng 605 ca</strong>
+  </div>
+ </div>
+</div></section>
+
+<!-- SECTION 1: PROJECT CHARTER (Soft Pink Section) -->
+<section class="section section-pink"><div class="container">
+ <div class="sec-head center reveal">
+  <span class="eyebrow">✦ Hiến chương dự án</span>
+  <h2>1. Project Charter: Mục tiêu, phạm vi và tiêu chí thành công</h2>
+  <p>Xác định rõ ràng ranh giới sản phẩm, đối tượng thụ hưởng và tiêu chí nghiệm thu của đồ án.</p>
+ </div>
+
+ <div class="canvas-grid reveal">
+  <div class="canvas-cell">
+   <span class="tag">Thông tin cốt lõi</span>
+   <h4>Tên dự án & Mục tiêu</h4>
+   <p><b>Tên dự án:</b> HS Workspace (Trợ lý phân loại mã HS có căn cứ và lưu hồ sơ giải trình).</p>
+   <p><b>Mục tiêu:</b> Hỗ trợ doanh nghiệp XNK thu hẹp mã ứng viên, tra cứu căn cứ từ 409 tài liệu V5, đối chiếu thuế MFN/FTA và lưu hồ sơ giải trình 5 năm theo Luật Hải quan.</p>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">Phạm vi nghiệp vụ</span>
+   <h4>Product Scope vs Project Scope</h4>
+   <p><b>Product Scope:</b> Ứng dụng tra cứu BM25, đối chứng M0, bóc tách OCR, so sánh mã, quy trình duyệt 2 cấp chặn tự duyệt, xuất gói ZIP snapshot băm SHA-256.</p>
+   <p><b>Project Scope:</b> Triển khai 8 tuần CPMAI, audit 961 văn bản, khóa cohort 605 hồ sơ, xây dựng 7 Colab Notebooks và báo cáo đối chiếu Colab và app v2.2.1.</p>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">Đối tượng thụ hưởng</span>
+   <h4>Người dùng & Khách hàng</h4>
+   <p><b>Người dùng chính:</b> Nhân viên XNK (lập hồ sơ tra cứu).</p>
+   <p><b>Người duyệt:</b> Chuyên viên tuân thủ / Đại lý hải quan (phê duyệt phương án).</p>
+   <p><b>Người mua:</b> Kế toán trưởng, Trưởng phòng XNK (kiểm soát rủi ro thuế).</p>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">Ràng buộc & Giả định</span>
+   <h4>Ràng buộc & Giả định</h4>
+   <p><b>Ràng buộc:</b> Tuân thủ Điều 18 & 77 Luật Hải quan 2014; không tự động điền tờ khai; ẩn danh toàn bộ PII; ưu tiên triển khai cục bộ (on-premise).</p>
+   <p><b>Giả định:</b> M0 phục vụ thu hẹp phạm vi; người có chuyên môn chịu trách nhiệm phê duyệt quyết định cuối cùng.</p>
+  </div>
+
+  <div class="canvas-cell span-2">
+   <span class="tag">Tiêu chí nghiệm thu</span>
+   <h4>Đầu ra chính & Tiêu chí thành công</h4>
+   <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:8px">
+    <div>
+     <b>Đầu ra bàn giao (Deliverables):</b>
+     <ul style="margin:6px 0 0;padding-left:1.2em;font-size:14px;color:var(--ink-secondary)">
+      <li>Prototype web app (Streamlit + FastAPI v2.2.1)</li>
+      <li>Kho tri thức SQLite FTS5 (409 văn bản, 16.061 đoạn)</li>
+      <li>Bộ 7 Colab Notebooks thực nghiệm và kiểm toán</li>
+      <li>Báo cáo cuối kỳ 13 trang đối chiếu Colab & app</li>
+     </ul>
+    </div>
+    <div>
+     <b>Tiêu chí thành công (Success Criteria):</b>
+     <ul style="margin:6px 0 0;padding-left:1.2em;font-size:14px;color:var(--ink-secondary)">
+      <li>Khóa cohort 605 hồ sơ, loại bỏ rò rỉ nhãn</li>
+      <li>Vượt qua 5 cổng kiểm soát Go/No-Go nghiêm ngặt</li>
+      <li>100% hồ sơ bảo đảm Human-in-the-loop (chặn tự duyệt)</li>
+      <li>Xuất gói ZIP hồ sơ giải trình kèm hash SHA-256</li>
+     </ul>
+    </div>
+   </div>
+  </div>
+ </div>
+</div></section>
+
+<!-- SECTION 2: TEAM MEMBERS & TEAM AGREEMENT (Warm Cream) -->
+<section class="section section-cream" id="team"><div class="container">
+ <div class="sec-head center reveal">
+  <span class="eyebrow">✦ Đội ngũ & Thỏa thuận</span>
+  <h2>2. Đội ngũ Nhóm 8 & Thỏa thuận làm việc chung</h2>
+  <p>Bốn thành viên; phân công chuyên trách từng mảng nghiệp vụ và duy trì kiểm tra chéo (Peer Review).</p>
+ </div>
+
+ <div class="team-grid reveal">
+  <div class="member-card">
+   <div class="member-avatar">M</div>
+   <h3>Nguyễn Đức Minh</h3>
+   <div class="member-id">MSSV: 31241022870</div>
+   <div class="member-roles"><span>Nhóm trưởng</span><span>AI/Data Lead</span></div>
+   <ul>
+    <li>Pipeline dữ liệu: OCR, làm sạch, khử rò rỉ nhãn, khóa cohort 605 hồ sơ.</li>
+    <li>Mô hình M0, baseline BM25, thử nghiệm LambdaRank (NB05) và pilot Qwen (NB07).</li>
+    <li>Tổng hợp báo cáo kỹ thuật, kiểm tra parity giữa Colab và ứng dụng v2.2.1.</li>
+   </ul>
+   <div class="member-contact">Email: minhnguyen.31241022870@gmail.com</div>
+  </div>
+
+  <div class="member-card">
+   <div class="member-avatar" style="background:var(--c-blue-soft);border-color:var(--c-blue);color:var(--c-blue-deep)">H</div>
+   <h3>Vương Nguyễn Ngọc Hân</h3>
+   <div class="member-id">MSSV: 31241020584</div>
+   <div class="member-roles"><span>Product Owner</span><span>UX Lead</span></div>
+   <ul>
+    <li>Product vision, AI Canvas, KPI Tree, Business Case và mô hình định giá.</li>
+    <li>Thiết kế luồng người dùng 6 bước có điểm dừng và wireframe prototype.</li>
+    <li>Phát triển trang web dự án, tài liệu One-pager và chương trình pilot.</li>
+   </ul>
+   <div class="member-contact">Email: hanvuong.31241020584@st.ueh.edu.vn</div>
+  </div>
+
+  <div class="member-card">
+   <div class="member-avatar" style="background:var(--c-mint-soft);border-color:var(--c-mint);color:var(--c-mint-deep)">Q</div>
+   <h3>Huỳnh Kỳ Quế</h3>
+   <div class="member-id">MSSV: 31241024054</div>
+   <div class="member-roles"><span>User Research</span><span>Stakeholder</span></div>
+   <ul>
+    <li>Khảo sát và phỏng vấn người dùng (nhân viên XNK, chuyên viên hải quan).</li>
+    <li>Xây dựng chân dung Persona và kiểm chứng các giả thuyết H1–H4.</li>
+    <li>Đánh giá đối chứng các công cụ hiện có (ECUS.AI, Avenir, Chatbot Hải quan).</li>
+   </ul>
+   <div class="member-contact">Email: quehuynh.31241024054@st.ueh.edu.vn</div>
+  </div>
+
+  <div class="member-card">
+   <div class="member-avatar" style="background:var(--c-lavender-soft);border-color:var(--c-lavender);color:var(--c-lavender-deep)">L</div>
+   <h3>Đậu Thị Khánh Linh</h3>
+   <div class="member-id">MSSV: 31241023229</div>
+   <div class="member-roles"><span>Scrum Master</span><span>Governance</span></div>
+   <ul>
+    <li>Điều phối sprint, quản lý Backlog và ghi nhận đầy đủ biên bản họp nhóm.</li>
+    <li>Xây dựng Risk Register, AI System Card và duy trì AI Use Disclosure Log.</li>
+    <li>Kiểm toán số liệu thực nghiệm, tính khoảng Wilson và chuẩn hóa APA 7.</li>
+   </ul>
+   <div class="member-contact">Email: linhdau.31241023229@st.ueh.edu.vn</div>
+  </div>
+ </div>
+
+ <!-- Team Agreement Accordion -->
+ <h3 class="editorial-serif reveal" style="font-size:26px;margin:36px 0 16px" data-vi="Thỏa thuận làm việc nhóm 8 điều khoản" data-en="Team Agreement (8 Principles)">Thỏa thuận làm việc nhóm 8 điều khoản</h3>
+ <div class="acc reveal">
+  <details open>
+   <summary>1. Mục tiêu chung & Cam kết học thuật</summary>
+   <div class="acc-body"><p>Hoàn thành đồ án xuất sắc theo đúng Hướng dẫn; duy trì tính minh bạch dữ liệu, kiểm soát rủi ro bằng Risk Register và System Card; đảm bảo mọi kết quả thực nghiệm đều có bằng chứng tái lập trên Colab và ứng dụng.</p></div>
+  </details>
+  <details>
+   <summary>2. Phân công vai trò & Cơ chế kiểm tra chéo (Peer Review)</summary>
+   <div class="acc-body"><p>Mỗi hạng mục công việc đều có một người chịu trách nhiệm chính (R/A) và ít nhất một thành viên kiểm tra chéo (Reviewer). Không chia nhỏ báo cáo thành từng chương độc lập mà phối hợp liên tục theo luồng CPMAI.</p></div>
+  </details>
+  <details>
+   <summary>3. Quy tắc họp & Giao tiếp (Communication Rules)</summary>
+   <div class="acc-body"><p>Họp định kỳ vào tối thứ Ba và thứ Bảy qua Google Meet; mỗi Sprint tổ chức Planning, Review và Retrospective. Biên bản họp phải được đăng tải vào kho tài liệu trong 24 giờ. Kênh Zalo/Teams phản hồi trong tối đa 12 giờ.</p></div>
+  </details>
+  <details>
+   <summary>4. Kỷ luật hạn chót nội bộ (Internal Deadlines)</summary>
+   <div class="acc-body"><p>Mọi đầu việc phải được hoàn thành trước hạn nộp chung của lớp ít nhất 48 giờ để phục vụ kiểm tra chéo, rà soát trích dẫn và chạy thử nghiệm code.</p></div>
+  </details>
+  <details>
+   <summary>5. Nguyên tắc sử dụng AI minh bạch (AI Use Disclosure Log)</summary>
+   <div class="acc-body"><p>Mọi hoạt động sử dụng công cụ AI (Gemini, Claude, ChatGPT) đều phải được ghi lại trong nhật ký AI Use Disclosure Log: mục đích, prompt chính, kết quả và phương pháp con người đã kiểm chứng lại thông tin.</p></div>
+  </details>
+  <details>
+   <summary>6. Bảo mật dữ liệu & Đạo đức nghiên cứu</summary>
+   <div class="acc-body"><p>Tuyệt đối không tải các tệp PDF gốc chứa tên doanh nghiệp, mã số thuế hoặc chữ ký công chức lên kho mã nguồn công khai. Toàn bộ dữ liệu huấn luyện phải được khử định danh (anonymized).</p></div>
+  </details>
+  <details>
+   <summary>7. Cơ chế ra quyết định & Giải quyết xung đột</summary>
+   <div class="acc-body"><p>Ưu tiên thảo luận đạt đồng thuận trên cơ sở số liệu thực nghiệm. Nếu ý kiến ngang nhau, Nhóm trưởng là người ra quyết định cuối cùng và ghi rõ lý do vào biên bản họp để báo cáo Giảng viên khi cần thiết.</p></div>
+  </details>
+  <details>
+   <summary>8. Bảng xác nhận cam kết điện tử</summary>
+   <div class="acc-body">
+    <div class="table-wrap">
+     <table>
+      <thead>
+       <tr><th>Thành viên</th><th>MSSV</th><th>Vai trò</th><th>Cam kết thực hiện</th><th>Ngày ký kết</th></tr>
+      </thead>
+      <tbody>
+       <tr><td><b>Nguyễn Đức Minh</b></td><td>31241022870</td><td>Nhóm trưởng; AI & Data Lead</td><td><span class="sticker sticker-mint">Đã xác nhận điện tử</span></td><td>01/09/2026</td></tr>
+       <tr><td><b>Vương Nguyễn Ngọc Hân</b></td><td>31241020584</td><td>Product Owner; Business & UX Lead</td><td><span class="sticker sticker-mint">Đã xác nhận điện tử</span></td><td>01/09/2026</td></tr>
+       <tr><td><b>Huỳnh Kỳ Quế</b></td><td>31241024054</td><td>User Research & Stakeholder Lead</td><td><span class="sticker sticker-mint">Đã xác nhận điện tử</span></td><td>01/09/2026</td></tr>
+       <tr><td><b>Đậu Thị Khánh Linh</b></td><td>31241023229</td><td>Scrum Master; Governance Lead</td><td><span class="sticker sticker-mint">Đã xác nhận điện tử</span></td><td>01/09/2026</td></tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+  </details>
+ </div>
+</div></section>
+
+<!-- SECTION 3: TIMELINE & CPMAI 8 WEEKS (Baby Blue Section) -->
+<section class="section section-blue" id="timeline"><div class="container">
+ <div class="sec-head center reveal">
+  <span class="eyebrow">✦ Lộ trình 8 tuần</span>
+  <h2>3. Tiến trình dự án theo 6 giai đoạn CPMAI</h2>
+  <p>Lộ trình thực hiện chuẩn mực Cognitive Project Management for AI qua 5 Sprint.</p>
+ </div>
+
+ <div class="timeline-editorial reveal">
+  <div class="timeline-item">
+   <div class="week">Tuần 1 (S0–S1)</div>
+   <h4>1. Business Understanding</h4>
+   <span class="gate">Cổng G0 / G1</span>
+   <p>Xác định bài toán phân loại mã HS, phỏng vấn chuyên gia, chốt quy trình đối chứng và xây dựng AI Canvas v1.</p>
+  </div>
+  <div class="timeline-item">
+   <div class="week">Tuần 1–2 (S1)</div>
+   <h4>2. Data Understanding</h4>
+   <span class="gate">Kiểm kê nguồn</span>
+   <p>Kiểm kê 961 văn bản thông báo, rà soát lỗi OCR, phân tích cấu trúc Biểu thuế 2026 và loại bỏ 193 hồ sơ lỗi.</p>
+  </div>
+  <div class="timeline-item">
+   <div class="week">Tuần 2–3 (S2)</div>
+   <h4>3. Data Preparation</h4>
+   <span class="gate">Khóa Cohort</span>
+   <p>Hai người chấm nhãn độc lập, rà soát rò rỉ nhãn, chia dữ liệu theo thời gian và khóa cohort 605 hồ sơ.</p>
+  </div>
+  <div class="timeline-item">
+   <div class="week">Tuần 3–4 (S3)</div>
+   <h4>4. Model Development</h4>
+   <span class="gate">Baseline & M0</span>
+   <p>Xây dựng baseline BM25, mô hình M0, thử nghiệm 12 cấu hình LambdaRank CPU trên Colab (NB01–05).</p>
+  </div>
+  <div class="timeline-item">
+   <div class="week">Tuần 4–5 (S3–S4)</div>
+   <h4>5. Model Evaluation</h4>
+   <span class="gate">Chấm độc lập</span>
+   <p>Đóng băng cấu hình, chấm 94 ca test, phân rã lỗi seen/unseen và tính khoảng Wilson 95% (17,80%–35,19%).</p>
+  </div>
+  <div class="timeline-item">
+   <div class="week">Tuần 6–8 (S4)</div>
+   <h4>6. Operationalization</h4>
+   <span class="gate">App v2.2.1</span>
+   <p>Tích hợp Streamlit + FastAPI /api/v2, thiết lập kiểm soát 2 cấp và thiết kế chương trình pilot có người duyệt.</p>
+  </div>
+ </div>
+</div></section>
+
+<!-- SECTION 4: PRODUCT BACKLOG (Warm Cream) -->
+<section class="section section-cream" id="backlog"><div class="container">
+ <div class="sec-head reveal">
+  <span class="eyebrow">✦ Danh mục công việc</span>
+  <h2>4. Product Backlog chi tiết theo 8 Workstreams</h2>
+  <p>Toàn bộ danh mục 17 công việc được gán mã Task ID, mức ưu tiên, người phụ trách và trạng thái nghiệm thu.</p>
+ </div>
+
+ <div class="filter-bar reveal" data-target="#backlog-table">
+  <button type="button" class="filter-btn active" data-filter="all">Tất cả hạng mục</button>
+  <button type="button" class="filter-btn" data-filter="business">Nghiên cứu & Kinh doanh</button>
+  <button type="button" class="filter-btn" data-filter="data">Kỹ thuật Dữ liệu</button>
+  <button type="button" class="filter-btn" data-filter="model">Phát triển AI & Mô hình</button>
+  <button type="button" class="filter-btn" data-filter="app">Phát triển Ứng dụng</button>
+  <button type="button" class="filter-btn" data-filter="gov">Quản trị & An toàn AI</button>
+ </div>
+
+ <div class="table-wrap reveal">
+  <table id="backlog-table">
+   <thead>
+    <tr>
+     <th>Mã Task</th>
+     <th>Tên hạng mục công việc</th>
+     <th>Workstream</th>
+     <th>Ưu tiên</th>
+     <th>Phụ trách</th>
+     <th>Sprint</th>
+     <th>Trạng thái</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr data-category="business">
+     <td><b>US-BUS-01</b></td>
+     <td>Khảo sát nhu cầu phân loại HS và tổng hợp số liệu Chatbot Hải quan (60,43% câu hỏi)</td>
+     <td>Nghiên cứu thị trường</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Huỳnh Kỳ Quế</td>
+     <td>S1</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="business">
+     <td><b>US-BUS-02</b></td>
+     <td>Xây dựng AI Canvas, Project Charter và KPI Tree cho dự án</td>
+     <td>Nghiên cứu thị trường</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Vương Nguyễn Ngọc Hân</td>
+     <td>S1</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="business">
+     <td><b>US-BUS-03</b></td>
+     <td>Xây dựng mô hình chi phí - lợi ích (NPV, hòa vốn tại 28 tài khoản) và thiết kế gói giá pilot</td>
+     <td>Mô hình kinh doanh</td>
+     <td><span class="sticker sticker-blue">Trung bình</span></td>
+     <td>Vương Nguyễn Ngọc Hân</td>
+     <td>S2–S3</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="data">
+     <td><b>US-DAT-01</b></td>
+     <td>Thu thập 961 văn bản thông báo xác định trước mã số và kiểm tra lỗi scan OCR</td>
+     <td>Kỹ thuật Dữ liệu</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Nguyễn Đức Minh, Quế</td>
+     <td>S1–S2</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="data">
+     <td><b>US-DAT-02</b></td>
+     <td>Khử rò rỉ nhãn (loại bỏ mã HS khỏi mô tả), sửa lỗi đọc số thực Pandas (giữ số 0 đầu)</td>
+     <td>Kỹ thuật Dữ liệu</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Nguyễn Đức Minh</td>
+     <td>S2</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="data">
+     <td><b>US-DAT-03</b></td>
+     <td>Khóa cohort 605 hồ sơ theo split thời gian (414 train / 97 valid / 94 test, 281 mã HS8)</td>
+     <td>Kỹ thuật Dữ liệu</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Nguyễn Đức Minh</td>
+     <td>S2</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="data">
+     <td><b>US-DAT-04</b></td>
+     <td>Xây dựng Kho tri thức V5: 409 tài liệu, 4.337 đơn vị, 16.061 đoạn chú giải SQLite FTS5</td>
+     <td>Kỹ thuật Dữ liệu</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Nguyễn Đức Minh</td>
+     <td>S2–S3</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="model">
+     <td><b>US-MOD-01</b></td>
+     <td>Triển khai baseline BM25 trên biểu thuế 2026 và văn bản tiền lệ</td>
+     <td>Mô hình AI</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Nguyễn Đức Minh</td>
+     <td>S2</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="model">
+     <td><b>US-MOD-02</b></td>
+     <td>Huấn luyện mô hình đối chứng M0 trên BGE-M3 và vector đặc trưng (Notebook 01–03)</td>
+     <td>Mô hình AI</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Nguyễn Đức Minh</td>
+     <td>S3</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="model">
+     <td><b>US-MOD-03</b></td>
+     <td>Thử nghiệm 12 cấu hình LambdaRank CPU trên Notebook 05 để tìm challenger</td>
+     <td>Mô hình AI</td>
+     <td><span class="sticker sticker-blue">Trung bình</span></td>
+     <td>Nguyễn Đức Minh</td>
+     <td>S3</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="model">
+     <td><b>US-MOD-04</b></td>
+     <td>Thực nghiệm Local LLM pilot (Qwen n=12 ca) trên Notebook 07 kiểm tra trích dẫn</td>
+     <td>Mô hình AI</td>
+     <td><span class="sticker sticker-blue">Trung bình</span></td>
+     <td>Nguyễn Đức Minh</td>
+     <td>S4</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="app">
+     <td><b>US-APP-01</b></td>
+     <td>Xây dựng backend FastAPI (/api/v2) cho SKU, phân tích, thuế và snapshot</td>
+     <td>Phát triển ứng dụng</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Nguyễn Đức Minh</td>
+     <td>S3</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="app">
+     <td><b>US-APP-02</b></td>
+     <td>Phát triển giao diện web Streamlit hỗ trợ phân quyền người lập, người duyệt</td>
+     <td>Phát triển ứng dụng</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Vương Nguyễn Ngọc Hân</td>
+     <td>S3–S4</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="app">
+     <td><b>US-APP-03</b></td>
+     <td>Cài đặt quy tắc kiểm soát an toàn: chặn tự duyệt, khóa ưu đãi FTA khi thiếu căn cứ</td>
+     <td>Phát triển ứng dụng</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Hân, Minh</td>
+     <td>S4</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="app">
+     <td><b>US-APP-04</b></td>
+     <td>Triển khai cơ chế đóng gói snapshot hồ sơ giải trình định dạng ZIP kèm băm SHA-256</td>
+     <td>Phát triển ứng dụng</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Nguyễn Đức Minh</td>
+     <td>S4</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="gov">
+     <td><b>US-GOV-01</b></td>
+     <td>Thiết lập Risk Register với 5 rủi ro cốt lõi và tiêu chí cổng Go/No-Go</td>
+     <td>Quản trị an toàn</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Đậu Thị Khánh Linh</td>
+     <td>S1–S4</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+    <tr data-category="gov">
+     <td><b>US-GOV-02</b></td>
+     <td>Biên soạn AI System Card và duy trì AI Use Disclosure Log</td>
+     <td>Quản trị an toàn</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td>Đậu Thị Khánh Linh</td>
+     <td>Mọi sprint</td>
+     <td><span class="sticker sticker-mint">Hoàn thành</span></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</div></section>
+
+<!-- SECTION 5: MEETING MINUTES & RACI (Lavender Section) -->
+<section class="section section-lavender" id="minutes"><div class="container">
+ <div class="sec-head center reveal">
+  <span class="eyebrow">✦ Ghi chép & Phân công</span>
+  <h2>5. Biên bản họp nhóm các Sprint & Ma trận RACI</h2>
+  <p>Lưu vết đầy đủ các phiên họp Sprint Planning, Review, Retrospective và phân định trách nhiệm RACI.</p>
+ </div>
+
+ <div class="acc reveal" style="margin-bottom:36px">
+  <details open>
+   <summary><b>Biên bản Họp Sprint 0 & 1: Khởi động & Khảo sát nghiệp vụ (05/09 & 19/09/2026)</b></summary>
+   <div class="acc-body">
+    <p><b>Thành phần:</b> Đầy đủ 4 thành viên.</p>
+    <p><b>Nội dung thảo luận:</b> Rà soát cổng thông tin Hải quan ghi nhận trên 53.000 câu hỏi chatbot liên quan mã HS; thử nghiệm OCR trên 6 thông báo mẫu; định vị sản phẩm là "Trợ lý hỗ trợ quyết định và lưu căn cứ", không làm công cụ tự động chốt mã.</p>
+    <p><b>Quyết định:</b> (1) Không xây dựng tool tự động chốt mã vì vi phạm Điều 18 Luật Hải quan; (2) Thông qua Team Agreement và RACI; (3) Linh mở Risk Register v1 ghi nhận rủi ro sai mã dẫn tới phạt thuế.</p>
+   </div>
+  </details>
+
+  <details>
+   <summary><b>Biên bản Họp Sprint 2: Kiểm toán dữ liệu & Khử rò rỉ nhãn (03/10/2026)</b></summary>
+   <div class="acc-body">
+    <p><b>Thành phần:</b> Đầy đủ 4 thành viên.</p>
+    <p><b>Nội dung thảo luận:</b> Minh phát hiện lỗi thư viện Pandas đọc cột mã CSV thành số thực (float) làm mất số 0 đầu, dẫn đến độ khớp 0/109; phát hiện rò rỉ nhãn trong phần mô tả. Xử lý ép kiểu chuỗi và loại trừ mã khỏi văn bản đầu vào.</p>
+    <p><b>Quyết định:</b> (1) Khóa cohort 605 hồ sơ sau khi loại bỏ 193 hồ sơ lỗi; (2) Chốt split theo thời gian; (3) Hoàn tất nộp Báo cáo tiến độ lần 1 (Nhom8_Report v6.0).</p>
+   </div>
+  </details>
+
+  <details>
+   <summary><b>Biên bản Họp Sprint 3: Phát triển mô hình M0 & Thử nghiệm Reranker (18/10/2026)</b></summary>
+   <div class="acc-body">
+    <p><b>Thành phần:</b> Đầy đủ 4 thành viên.</p>
+    <p><b>Nội dung thảo luận:</b> Minh thử nghiệm 12 cấu hình LambdaRank CPU. Cấu hình tốt nhất đạt 22/94 test (so với M0 24/94 test, p=0,754). Cổng validation quyết định không chọn challenger.</p>
+    <p><b>Quyết định:</b> (1) Giữ M0 làm đối chứng nghiên cứu; (2) Giữ BM25 làm mặc định trong app để đảm bảo tốc độ &lt;100ms; (3) Hân bắt đầu dựng FastAPI và giao diện Streamlit v2.2.1.</p>
+   </div>
+  </details>
+
+  <details>
+   <summary><b>Biên bản Họp Sprint 4: Đánh giá cuối kỳ, Pilot LLM & Nghiệm thu (01/11/2026)</b></summary>
+   <div class="acc-body">
+    <p><b>Thành phần:</b> Đầy đủ 4 thành viên.</p>
+    <p><b>Nội dung thảo luận:</b> Phân tích thử nghiệm pilot Qwen n=12 ca trên Notebook 07: mô hình bị từ chối 5 ca và hỏi lại 7 ca do trích dẫn không khớp chính xác. Kết luận: Chưa đủ an toàn để triển khai mô hình ngôn ngữ tự do trong thực tế.</p>
+    <p><b>Quyết định:</b> (1) Chốt Báo cáo cuối kỳ ngày 04/11/2026; (2) Áp dụng quy tắc chặn tự duyệt; (3) Hoàn thiện website nộp Giảng viên qua một link duy nhất.</p>
+   </div>
+  </details>
+ </div>
+
+ <!-- RACI Matrix Table -->
+ <div class="table-wrap reveal" id="raci">
+  <table>
+   <thead>
+    <tr>
+     <th>Hạng mục công việc / Đầu ra</th>
+     <th style="text-align:center">Nguyễn Đức Minh</th>
+     <th style="text-align:center">Vương Nguyễn Ngọc Hân</th>
+     <th style="text-align:center">Huỳnh Kỳ Quế</th>
+     <th style="text-align:center">Đậu Thị Khánh Linh</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td><b>AI Canvas & Project Charter</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+    </tr>
+    <tr>
+     <td><b>Khảo sát người dùng, Persona, KPI Tree</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
+    </tr>
+    <tr>
+     <td><b>Mô hình kinh doanh & Định giá Pilot</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
+    </tr>
+    <tr>
+     <td><b>Data Pipeline, Data Audit, Khóa Cohort 605</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
+    </tr>
+    <tr>
+     <td><b>Baseline BM25, Mô hình M0, Đánh giá thực nghiệm</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+    </tr>
+    <tr>
+     <td><b>Ứng dụng v2.2.1, Mockup, One-pager, Website</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
+    </tr>
+    <tr>
+     <td><b>Đánh giá đối chứng công cụ & Thiết kế Pilot</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+    </tr>
+    <tr>
+     <td><b>Quản lý Backlog, Biên bản họp các Sprint</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
+    </tr>
+    <tr>
+     <td><b>Risk Register, AI System Card, AI Disclosure Log</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</div></section>
+
+<!-- SECTION 6: AI CANVAS (Warm Cream) -->
+<section class="section section-cream" id="ai-canvas"><div class="container">
+ <div class="sec-head center reveal">
+  <span class="eyebrow">✦ Bản thiết kế AI</span>
+  <h2>6. AI Canvas: 11 khối phân tích cơ hội và giới hạn AI</h2>
+  <p>Làm rõ mối quan hệ giữa bài toán kinh doanh, dữ liệu, năng lực mô hình và điểm can thiệp con người.</p>
+ </div>
+
+ <div class="canvas-grid reveal">
+  <div class="canvas-cell">
+   <span class="tag">01. Khách hàng & Người dùng</span>
+   <h4>User / Buyer</h4>
+   <p><b>Người dùng:</b> Nhân viên XNK lập hồ sơ; Chuyên viên tuân thủ phê duyệt.</p>
+   <p><b>Người mua:</b> Trưởng phòng XNK, Kế toán trưởng.</p>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">02. Vấn đề nghiệp vụ</span>
+   <h4>Business Problem</h4>
+   <p>Phân loại mã HS 8 số trong số 11.414 dòng biểu thuế; căn cứ phân tán; sai mã dẫn tới phạt thuế 10–20% và rủi ro thanh kiểm tra 5 năm.</p>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">03. Quyết định nghiệp vụ</span>
+   <h4>Business Decision</h4>
+   <p>Xác định mã HS 8 số chính xác cho SKU mới; quyết định mức thuế suất áp dụng; quyết định có cần gửi hồ sơ xin xác định trước mã số hay không.</p>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">04. Cơ hội ứng dụng AI</span>
+   <h4>AI Opportunity</h4>
+   <p>Thu hẹp danh sách ứng viên từ hàng ngàn mã xuống top 3–5 mã tiềm năng; tự động tìm đoạn chú giải loại trừ liên quan để giảm 30 phút tra cứu/SKU.</p>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">05. Dữ liệu đầu vào</span>
+   <h4>Data Inputs</h4>
+   <p>Mô tả hàng hóa, thành phần, cấu tạo, công dụng từ catalogue; 409 tài liệu pháp lý V5; lịch sử thông báo xác định trước mã số đã ban hành.</p>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">06. Năng lực của AI</span>
+   <h4>AI Capabilities</h4>
+   <p>Truy hồi văn bản BM25 + BGE-M3; xếp hạng mã HS (mô hình M0); phát hiện thuộc tính còn thiếu; cảnh báo mã tương tự đang khai khác nhau.</p>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">07. Giá trị kỳ vọng</span>
+   <h4>Expected Value</h4>
+   <p>Tiết kiệm 30 phút/SKU (lợi ích 22,5 triệu đ/năm ở 300 SKU); nâng cao tính nhất quán trong danh mục; hồ sơ lưu trữ đầy đủ căn cứ sẵn sàng giải trình.</p>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">08. Chi phí khi sai sót</span>
+   <h4>Cost of Error</h4>
+   <p><b>Rất cao:</b> Phạt thiếu thuế 10%–20%, tiền chậm nộp, bị ấn định thuế sau thông quan. Hậu quả lớn hơn nhiều so với vài phút tra cứu thủ công.</p>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">09. Can thiệp của con người</span>
+   <h4>Human Intervention</h4>
+   <p><b>Bắt buộc 100%:</b> Dừng khi thiếu thuộc tính; chuyên viên đối chiếu lý do loại trừ; quy định phần mềm chặn tự duyệt; người ký chịu trách nhiệm pháp lý.</p>
+  </div>
+
+  <div class="canvas-cell span-2">
+   <span class="tag">10. Phương pháp đánh giá</span>
+   <h4>Evaluation Approach</h4>
+   <p>Đo lường trên cohort đóng băng 605 hồ sơ theo split thời gian. Thước đo chính: Top-1 và Top-3 độ chính xác ở cấp 4, 6 và 8 số; tỷ lệ trích dẫn đúng số trang nguồn; kiểm tra parity giữa môi trường Colab và app.</p>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">11. Thử nghiệm GTM</span>
+   <h4>Go-to-Market Hypothesis</h4>
+   <p>Thâm nhập thông qua dịch vụ rà soát danh mục SKU đã khai (tìm mã lệch), sau đó mời tham gia pilot sử dụng phần mềm có người duyệt.</p>
+  </div>
+ </div>
+</div></section>
+
+<!-- SECTION 7: DATA AUDIT & STATS STRIP (Mint Section) -->
+<section class="section section-mint" id="data-audit"><div class="container">
+ <div class="sec-head center reveal">
+  <span class="eyebrow" data-vi="✦ Kiểm toán dữ liệu" data-en="✦ Data Audit">✦ Kiểm toán dữ liệu</span>
+  <h2 data-vi="7. Báo cáo Kiểm toán Dữ liệu" data-en="7. Data Audit Report">7. Báo cáo Kiểm toán Dữ liệu</h2>
+  <p data-vi="Kiểm toán toàn diện các tầng dữ liệu từ thu thập thô, làm sạch, khử rò rỉ nhãn đến khóa cohort." data-en="Comprehensive audit across data layers: raw ingestion, cleaning, label leak prevention, to cohort freezing.">Kiểm toán toàn diện các tầng dữ liệu từ thu thập thô, làm sạch, khử rò rỉ nhãn đến khóa cohort.</p>
+ </div>
+
+ <div class="stats-strip reveal">
+  <div class="stat-box">
+   <div class="num">961</div>
+   <div class="lbl">Tệp thông báo scan OCR đọc được, 820 nhãn không rỗng, 356 hồ sơ vào hàng đợi rà soát.</div>
+  </div>
+  <div class="stat-box">
+   <div class="num">605</div>
+   <div class="lbl">Cohort mô hình đóng băng (414 train / 97 valid / 94 test, 281 mã HS8 phân biệt).</div>
+  </div>
+  <div class="stat-box">
+   <div class="num">409</div>
+   <div class="lbl">Tài liệu pháp lý & 16.061 đoạn văn bản chú giải được lập chỉ mục trong Kho tri thức V5.</div>
+  </div>
+  <div class="stat-box">
+   <div class="num">100%</div>
+   <div class="lbl">Dữ liệu được khử định danh (PII), ẩn danh tên doanh nghiệp và mã số thuế.</div>
+  </div>
+ </div>
+
+ <div class="table-wrap reveal">
+  <table>
+   <thead>
+    <tr>
+     <th>Tầng dữ liệu</th>
+     <th>Hiện trạng kiểm tra mới nhất</th>
+     <th>Hệ quả & Quyết định xử lý</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td><b>Thông báo đầu vào</b></td>
+     <td>961 file đọc được, 820 nhãn không rỗng, 356 hồ sơ vào hàng đợi rà soát. 5/966 trong ledger đóng băng chưa có file trong lần dựng này.</td>
+     <td>Theo dõi lỗi OCR, thiếu file và quyết định loại theo ID cụ thể; ghi nhận nhật ký lỗi.</td>
+    </tr>
+    <tr>
+     <td><b>Cohort dùng mô hình</b></td>
+     <td>605 hồ sơ, phân chia theo thời gian: 414 train / 97 valid / 94 test. Bao phủ 281 mã HS8 phân biệt.</td>
+     <td>Khóa split theo thời gian và rà soát nhóm doanh nghiệp, SKU, phiên bản biểu thuế để chống rò rỉ tương lai.</td>
+    </tr>
+    <tr>
+     <td><b>Nhãn tham chiếu</b></td>
+     <td>543 nhãn trích xuất tạm, 62 nhãn được đối soát kỹ lưỡng. Chưa có tập gold phân loại độc lập từ hội đồng chuyên gia.</td>
+     <td>Hiện tại đánh giá đang đo độ khớp nhãn với cơ quan hải quan; cần bổ sung 2 chuyên viên gán nhãn độc lập để phân xử.</td>
+    </tr>
+    <tr>
+     <td><b>Kho tri thức V5</b></td>
+     <td>409 tài liệu, 4.337 đơn vị, 1.804 đơn vị chờ OCR và 16.061 đoạn văn bản chú giải.</td>
+     <td>Số đoạn phản ánh quy mô kho tri thức; chất lượng trích dẫn nguồn được đo lường độc lập theo số trang công báo.</td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+
+ <div class="callout reveal" style="margin-top:24px">
+  <strong>Bài học kỹ thuật về sửa lỗi kiểu dữ liệu và rò rỉ tiền lệ:</strong>
+  Trong Notebook 03, do thư viện Pandas tự động chuyển cột mã sang kiểu số thực (float) khi có ô trống, chuỗi <code>"27101989"</code> bị biến thành <code>27101989.0</code> dẫn tới kết quả ban đầu hiển thị 0/109 ca đúng. Nhóm đã sửa triệt để kiểu dữ liệu khi đọc, chuẩn hóa định dạng và giữ số 0 ở đầu. Sau khi sửa, kết quả đạt 23/109 validation và 24/109 test. Đồng thời, áp dụng mặt nạ (masking) theo thời gian trước khi chuẩn hóa BM25 để tuyệt đối không cho mô hình "nhìn thấy tương lai".
+ </div>
+</div></section>
+
+<!-- SECTION 8: RISK REGISTER (Dark Section) -->
+<section class="section-dark" id="risk-register"><div class="container">
+ <div class="sec-head reveal">
+  <span class="eyebrow" style="background:#28272E;color:#FFFFFF;border-color:rgba(255,255,255,0.2)">✦ QUẢN TRỊ RỦI RO & AN TOÀN</span>
+  <h2 class="editorial-serif" style="font-size:clamp(32px,3.8vw,52px)">
+   8. Risk Register: <span class="tape tape-pink">Năm rủi ro trọng yếu</span> & Cổng Go/No-Go
+  </h2>
+  <p style="color:#B5B2BE">
+   Thiết lập các tiêu chí kiểm soát và rào chắn an toàn trước khi triển khai hệ thống vào thực tế.
+  </p>
+ </div>
+
+ <div class="table-wrap reveal" style="background:#232228;border-color:rgba(255,255,255,0.15)">
+  <table>
+   <thead>
+    <tr style="background:#1B1A1F">
+     <th style="color:#FFFFFF">Mã Risk</th>
+     <th style="color:#FFFFFF">Mô tả rủi ro trọng yếu</th>
+     <th style="color:#FFFFFF">Mức độ</th>
+     <th style="color:#FFFFFF">Biện pháp kiểm soát & Giảm thiểu</th>
+     <th style="color:#FFFFFF">Risk Owner</th>
+     <th style="color:#FFFFFF">Cổng quyết định (Go / No-Go)</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td><b style="color:#FFFFFF">R-01</b></td>
+     <td style="color:#D4D2DB">Sai mã HS gây hậu quả phạt thuế 10–20% và truy thu sau thông quan</td>
+     <td><span class="sticker sticker-pink">Rất cao</span></td>
+     <td style="color:#D4D2DB">Hiển thị phương án cạnh tranh, yêu cầu nêu lý do chọn/loại; dừng khi thiếu đặc tính; bắt buộc người duyệt có chuyên môn.</td>
+     <td style="color:#D4D2DB">Nguyễn Đức Minh</td>
+     <td><span class="sticker sticker-pink">NO-GO</span> <span style="font-size:12px;color:#D4D2DB">Không tự động chốt HS8</span></td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">R-02</b></td>
+     <td style="color:#D4D2DB">Sử dụng văn bản hết hiệu lực hoặc áp dụng sai điều kiện thuế ưu đãi FTA</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td style="color:#D4D2DB">Đối chiếu nguồn văn bản theo ngày xét; kiểm tra số công báo bản ký; khóa tự động tính năng báo giá ưu đãi khi thiếu căn cứ FTA.</td>
+     <td style="color:#D4D2DB">Vương Nguyễn Ngọc Hân</td>
+     <td><span class="sticker sticker-mint">GO CÓ ĐIỀU KIỆN</span> <span style="font-size:12px;color:#D4D2DB">Chỉ pilot nguồn đã kiểm</span></td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">R-03</b></td>
+     <td style="color:#D4D2DB">Mô hình ngôn ngữ bịa đặt trích dẫn (hallucination) hoặc suy diễn sai</td>
+     <td><span class="sticker sticker-butter">Trung bình</span></td>
+     <td style="color:#D4D2DB">Đối chiếu ID đoạn văn bản nguồn; kiểm tra chuyên gia xem đoạn trích có thực sự hỗ trợ kết luận; red-team prompt injection.</td>
+     <td style="color:#D4D2DB">Đậu Thị Khánh Linh</td>
+     <td><span class="sticker sticker-pink">NO-GO</span> <span style="font-size:12px;color:#D4D2DB">Không mở rộng LLM tự do</span></td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">R-04</b></td>
+     <td style="color:#D4D2DB">Sai danh tính người duyệt hoặc chỉnh sửa hồ sơ sau khi duyệt</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td style="color:#D4D2DB">Tách biệt tài khoản người lập và người duyệt; phần mềm chặn tự duyệt; khóa snapshot và băm SHA-256; ghi nhật ký thay đổi.</td>
+     <td style="color:#D4D2DB">Đậu Thị Khánh Linh</td>
+     <td><span class="sticker sticker-pink">NO-GO</span> <span style="font-size:12px;color:#D4D2DB">Chặn khi chưa đạt phân quyền</span></td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">R-05</b></td>
+     <td style="color:#D4D2DB">Rò rỉ dữ liệu chứng từ nội bộ và bí mật kinh doanh của doanh nghiệp</td>
+     <td><span class="sticker sticker-pink">Cao</span></td>
+     <td style="color:#D4D2DB">Mặc định chạy cục bộ (on-premise); áp dụng nguyên tắc đặc quyền tối thiểu; ẩn danh toàn bộ PII (tên DN, MST, địa chỉ).</td>
+     <td style="color:#D4D2DB">Huỳnh Kỳ Quế</td>
+     <td><span class="sticker sticker-pink">NO-GO</span> <span style="font-size:12px;color:#D4D2DB">Không gửi chứng từ ra ngoài</span></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+</div></section>
+
+<!-- SECTION 9: AI SYSTEM CARD (Warm Cream) -->
+<section class="section section-cream" id="system-card"><div class="container">
+ <div class="sec-head center reveal">
+  <span class="eyebrow">✦ Minh bạch hệ thống</span>
+  <h2>9. AI System Card: Công bố đạo đức và năng lực AI</h2>
+  <p>Tài liệu công bố công khai mục đích sử dụng, phạm vi ngoài thiết kế, dữ liệu và các giới hạn kỹ thuật theo chuẩn AI Ethics.</p>
+ </div>
+
+ <div class="canvas-grid reveal">
+  <div class="canvas-cell span-2">
+   <span class="tag" data-vi="Mục đích sử dụng" data-en="Intended Scope">Mục đích sử dụng</span>
+   <h4 data-vi="Mục đích thiết kế" data-en="Intended Use">Mục đích thiết kế</h4>
+   <p>Hệ thống được thiết kế để hỗ trợ nhân viên xuất nhập khẩu và chuyên viên tuân thủ tại Việt Nam:</p>
+   <ul>
+    <li>Thu hẹp phạm vi tìm kiếm mã HS 8 số cho hàng hóa mới;</li>
+    <li>Truy hồi các đoạn văn bản pháp lý liên quan từ Chú giải chi tiết HS và Biểu thuế XNK;</li>
+    <li>Đối chiếu trực diện các mã ứng viên và phân tích chênh lệch thuế suất;</li>
+    <li>Quản lý quy trình phê duyệt hai cấp và lưu trữ bằng chứng giải trình phục vụ kiểm tra 5 năm.</li>
+   </ul>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag" data-vi="Giới hạn phạm vi" data-en="Boundary Limits">Giới hạn phạm vi</span>
+   <h4 data-vi="Phạm vi không áp dụng" data-en="Out-of-Scope Use">Phạm vi không áp dụng</h4>
+   <ul>
+    <li>Không dùng để tự động quyết định và truyền tờ khai hải quan mà không có chuyên viên duyệt;</li>
+    <li>Không dùng để thay thế phán quyết chính thức của Cơ quan Hải quan;</li>
+    <li>Không dùng để xác định trị giá tính thuế hoặc xuất xứ hàng hóa.</li>
+   </ul>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag" data-vi="Thành phần mô hình" data-en="Model Components">Thành phần mô hình</span>
+   <h4 data-vi="Thành phần mô hình & Cấu hình AI" data-en="AI Components & Configuration">Thành phần mô hình & Cấu hình AI</h4>
+   <ul>
+    <li><b>Tra cứu mặc định:</b> BM25 trên SQLite FTS5 (nhanh, nhẹ, giải thích được).</li>
+    <li><b>Nhánh nghiên cứu:</b> BGE-M3 embedding kết hợp mô hình phân cấp M0.</li>
+    <li><b>Tái xếp hạng:</b> LambdaRank CPU (Notebook 05).</li>
+    <li><b>OCR Engine:</b> Tesseract tiếng Việt cho văn bản scan.</li>
+   </ul>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag">Dữ liệu huấn luyện</span>
+   <h4>Data Sources & Splits</h4>
+   <ul>
+    <li>961 văn bản thông báo xác định trước mã số (quý 1/2023 – 2026).</li>
+    <li>Cohort 605 ca đóng băng (414 Train / 97 Valid / 94 Test).</li>
+    <li>Biểu thuế XNK song ngữ 2026 (11.414 dòng cấp 8 số).</li>
+    <li>Kho tri thức V5 gồm 409 tài liệu với 16.061 đoạn văn bản.</li>
+   </ul>
+  </div>
+
+  <div class="canvas-cell">
+   <span class="tag" data-vi="Kết quả thực nghiệm" data-en="Empirical Results">Kết quả thực nghiệm</span>
+   <h4 data-vi="Thước đo đánh giá thực nghiệm (n=94 ca test)" data-en="Evaluation Metrics (n=94 test cases)">Thước đo đánh giá thực nghiệm (n=94 ca test)</h4>
+   <ul>
+    <li><b>HS8 Top-1:</b> 24/94 ca đúng (Wilson 95%: 17,80% – 35,19%).</li>
+    <li><b>HS4 Top-3:</b> 66/94 ca đúng (thu hẹp nhóm tốt).</li>
+    <li><b>HS8 Top-3:</b> 34/94 ca đúng.</li>
+    <li><b>Seen codes:</b> Đúng 24/43 ca (mã đã gặp).</li>
+    <li><b>Unseen codes:</b> Đúng 0/51 ca (mã mới).</li>
+   </ul>
+  </div>
+
+  <div class="canvas-cell span-3">
+   <span class="tag">Giám sát con người & Điều kiện triển khai</span>
+   <h4>Human Oversight & Deployment Conditions</h4>
+   <p><b>Giám sát con người:</b> Quy trình phần mềm áp đặt cơ chế "Human-in-the-loop" bắt buộc. Chuyên viên tuân thủ phải xác nhận thuộc tính kỹ thuật, rà soát chú giải loại trừ và ký duyệt trước khi xuất hồ sơ. Chặn hoàn toàn tính năng tự động phê duyệt khi người lập trùng người duyệt.</p>
+   <p><b>Điều kiện triển khai:</b> Chỉ triển khai trong môi trường pilot có thỏa thuận bảo mật dữ liệu; hệ thống chạy trên máy chủ nội bộ hoặc đám mây riêng biệt; khóa toàn bộ manifest artifact để bảo đảm tính tái lập của kết quả phân loại.</p>
+  </div>
+ </div>
+</div></section>
+</main>
+
+<!-- SITE FOOTER -->
+<footer class="site-footer"><div class="container">
+ <div class="footer-grid">
+  <div>
+   <div class="footer-brand" style="display:flex;align-items:center;gap:12px;margin-bottom:14px">
+    <span class="brand-mark" style="background:#FFFFFF;color:#18171C">hs.</span>
+    <b>HS Workspace</b>
+   </div>
+   <p>Nền tảng hỗ trợ quyết định phân loại mã HS và quản lý căn cứ giải trình cho doanh nghiệp xuất nhập khẩu Việt Nam. Đồ án học phần Dự án Trí tuệ Nhân tạo, UEH.</p>
+  </div>
+  <div>
+   <h2 data-vi="Khu vực website" data-en="Site Navigation">Khu vực website</h2>
+   <ul>
+    <li><a href="index.html" data-vi="Trang chủ" data-en="Home">Trang chủ</a></li>
+    <li><a href="product.html" data-vi="Sản phẩm" data-en="Product">Sản phẩm</a></li>
+    <li><a href="project-management.html" data-vi="Quản lý dự án" data-en="Project Management">Quản lý dự án</a></li>
+    <li><a href="resources.html" data-vi="Tài liệu & Thư viện" data-en="Resources & Library">Tài liệu & Thư viện</a></li>
+   </ul>
+  </div>
+  <div>
+   <h2>Thông tin đồ án</h2>
+   <ul>
+    <li>Học phần: Dự án Trí tuệ Nhân tạo</li>
+    <li>Mã lớp học phần: 26C1TEC55001302</li>
+    <li>Giảng viên: ThS. Tạ Việt Phương</li>
+    <li>Đại học Kinh tế TP. Hồ Chí Minh (UEH)</li>
+    <li>Báo cáo đối chiếu Colab và app v2.2.1</li>
+   </ul>
+  </div>
+  <div>
+   <h2>Lưu ý trách nhiệm pháp lý</h2>
+   <p style="font-size:13.5px;line-height:1.6">Kết quả từ mô hình AI chỉ mang tính chất tham khảo, hỗ trợ tra cứu và thu thập căn cứ. Người khai hải quan và chuyên viên tuân thủ chịu trách nhiệm hoàn toàn trước pháp luật theo Điều 18 và Điều 77 Luật Hải quan 2014.</p>
+  </div>
+ </div>
+ <div class="footer-bottom">
+  <span>Cập nhật: 04/11/2026 · Phiên bản v2.2.1</span>
+  <span>Nhóm 8: Nguyễn Đức Minh (Lead/AI), Vương Nguyễn Ngọc Hân (PO), Huỳnh Kỳ Quế (Research), Đậu Thị Khánh Linh (Scrum/Gov)</span>
+ </div>
+</div></footer>
+<script src="assets/app.js"></script>
+</body>
+</html>
