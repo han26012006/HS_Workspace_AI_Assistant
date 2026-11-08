@@ -358,31 +358,106 @@
  <div class="hero-grid reveal" id="demo-showcase-grid">
   <div>
    <h3 class="editorial-serif" style="font-size:28px;margin-bottom:16px">Ba tác vụ demo có thể tái lập:</h3>
+   
+   <!-- TASK 1 -->
    <div class="card card-pink demo-task-card active" id="demo-task-1" data-task="1" style="margin-bottom:14px;cursor:pointer">
-    <small><b>TÁC VỤ 1 · TẠO HỒ SƠ & BÓC TÁCH THUỘC TÍNH</b></small>
-    <p style="margin:6px 0 0">Nhập SKU, tải catalogue PDF, hệ thống OCR trích xuất thông số công suất 1.200W, điện áp 220V, cấu tạo gia nhiệt điện trở.</p>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+     <small><b>TÁC VỤ 1 · TẠO HỒ SƠ & BÓC TÁCH THUỘC TÍNH</b></small>
+     <span class="sticker sticker-pink" style="padding:2px 8px;font-size:11px">3 màn hình</span>
+    </div>
+    <p style="margin:4px 0 10px;font-size:14px">Nhập SKU, tải catalogue PDF, hệ thống OCR trích xuất thông số công suất 1.200W, điện áp 220V, cấu tạo gia nhiệt điện trở.</p>
+    <div class="demo-sub-badge-row">
+     <button type="button" class="sub-step-chip active" data-img="demo-img-1a">1A · Khởi tạo SKU</button>
+     <button type="button" class="sub-step-chip" data-img="demo-img-1b">1B · Nạp PDF & OCR</button>
+     <button type="button" class="sub-step-chip" data-img="demo-img-1c">1C · Bóc tách thuộc tính</button>
+    </div>
    </div>
+
+   <!-- TASK 2 -->
    <div class="card card-blue demo-task-card" id="demo-task-2" data-task="2" style="margin-bottom:14px;cursor:pointer">
-    <small><b>TÁC VỤ 2 · TRA CỨU & SO SÁNH HAI MÃ CẠNH TRANH</b></small>
-    <p style="margin:6px 0 0">Hệ thống gợi ý mã 8516.79.90 và mã cạnh tranh 8516.79.10 (ấm đun nước). Bảng đối chiếu làm rõ lý do loại trừ mã 8516.79.10 theo chú giải nhóm.</p>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+     <small><b>TÁC VỤ 2 · TRA CỨU & SO SÁNH HAI MÃ CẠNH TRANH</b></small>
+     <span class="sticker sticker-blue" style="padding:2px 8px;font-size:11px">2 màn hình</span>
+    </div>
+    <p style="margin:4px 0 10px;font-size:14px">Hệ thống gợi ý mã 8516.79.90 và mã cạnh tranh 8516.79.10 (ấm đun nước). Bảng đối chiếu làm rõ lý do loại trừ mã 8516.79.10 theo chú giải nhóm.</p>
+    <div class="demo-sub-badge-row">
+     <button type="button" class="sub-step-chip" data-img="demo-img-2a">2A · Tra cứu Top mã</button>
+     <button type="button" class="sub-step-chip" data-img="demo-img-2b">2B · Đối chiếu 2 mã</button>
+    </div>
    </div>
+
+   <!-- TASK 3 -->
    <div class="card card-mint demo-task-card" id="demo-task-3" data-task="3" style="margin-bottom:14px;cursor:pointer">
-    <small><b>TÁC VỤ 3 · PHÊ DUYỆT ĐỘC LẬP & KHÓA SNAPSHOT</b></small>
-    <p style="margin:6px 0 0">Chuyên viên tuân thủ kiểm tra căn cứ, ký duyệt. Hệ thống băm SHA-256 và xuất trọn bộ hồ sơ giải trình (PDF phiếu phân loại + ZIP tài liệu gốc).</p>
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+     <small><b>TÁC VỤ 3 · PHÊ DUYỆT ĐỘC LẬP & KHÓA SNAPSHOT</b></small>
+     <span class="sticker sticker-mint" style="padding:2px 8px;font-size:11px">2 màn hình</span>
+    </div>
+    <p style="margin:4px 0 10px;font-size:14px">Chuyên viên tuân thủ kiểm tra căn cứ, ký duyệt. Hệ thống băm SHA-256 và xuất trọn bộ hồ sơ giải trình (PDF phiếu phân loại + ZIP tài liệu gốc).</p>
+    <div class="demo-sub-badge-row">
+     <button type="button" class="sub-step-chip" data-img="demo-img-3a">3A · Phê duyệt độc lập</button>
+     <button type="button" class="sub-step-chip" data-img="demo-img-3b">3B · Khóa SHA-256</button>
+    </div>
    </div>
   </div>
 
-  <figure class="collage-frame" style="position:sticky;top:100px;align-self:start">
-   <div style="background:var(--bg-alt);padding:10px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:6px">
-    <span style="width:10px;height:10px;border-radius:50%;background:#E89BB5"></span>
-    <span style="width:10px;height:10px;border-radius:50%;background:#9FD5DF"></span>
-    <span style="width:10px;height:10px;border-radius:50%;background:#B5CE93"></span>
-    <small id="demo-indicator" style="margin-left:auto;font-weight:700;color:var(--ink-muted)">Tác vụ 1: Nhập SKU & Bóc tách OCR</small>
+  <figure class="collage-frame" style="position:relative;margin:0;align-self:center;box-shadow:var(--shadow-lg);border-radius:var(--r-lg);overflow:hidden">
+   <!-- Mock Window Header -->
+   <div class="demo-window-header">
+    <div class="demo-window-dots">
+     <span style="background:#E89BB5"></span>
+     <span style="background:#9FD5DF"></span>
+     <span style="background:#B5CE93"></span>
+    </div>
+    <div class="demo-window-title">
+     <b>Prototype v2.2.1</b> · <span id="demo-indicator">Tác vụ 1: Nhập SKU & Bóc tách OCR</span>
+    </div>
+    <div class="demo-toolbar-tabs">
+     <div class="task-tabs-group" id="tabs-group-1">
+      <button type="button" class="tool-tab active" data-img="demo-img-1a">1A · Khởi tạo</button>
+      <button type="button" class="tool-tab" data-img="demo-img-1b">1B · OCR PDF</button>
+      <button type="button" class="tool-tab" data-img="demo-img-1c">1C · Thuộc tính</button>
+     </div>
+     <div class="task-tabs-group" id="tabs-group-2" style="display:none">
+      <button type="button" class="tool-tab" data-img="demo-img-2a">2A · Gợi ý mã</button>
+      <button type="button" class="tool-tab" data-img="demo-img-2b">2B · Đối chiếu</button>
+     </div>
+     <div class="task-tabs-group" id="tabs-group-3" style="display:none">
+      <button type="button" class="tool-tab" data-img="demo-img-3a">3A · Phê duyệt</button>
+      <button type="button" class="tool-tab" data-img="demo-img-3b">3B · Khóa SHA-256</button>
+     </div>
+    </div>
    </div>
-   <div class="demo-screens-wrapper" style="position:relative;background:#FFFFFF;overflow:hidden;border-radius:0 0 var(--r-md) var(--r-md)">
-    <img src="assets/demo-task-1.jpg" id="demo-img-1" class="demo-screen-img active" alt="Tác vụ 1: Bóc tách thuộc tính OCR">
-    <img src="assets/demo-task-2.jpg" id="demo-img-2" class="demo-screen-img" alt="Tác vụ 2: Tra cứu & so sánh mã cạnh tranh">
-    <img src="assets/demo-task-3.jpg" id="demo-img-3" class="demo-screen-img" alt="Tác vụ 3: Phê duyệt độc lập & khóa snapshot">
+
+   <!-- Mock Window Body: Screen Images -->
+   <div class="demo-screens-wrapper">
+    <!-- Task 1 Images -->
+    <img src="assets/demo_1a.png" id="demo-img-1a" class="demo-screen-img active" alt="Tác vụ 1A: Khởi tạo hồ sơ & nhập mã SKU" loading="lazy">
+    <img src="assets/demo_1b.png" id="demo-img-1b" class="demo-screen-img" alt="Tác vụ 1B: Tải catalogue PDF & OCR trích xuất" loading="lazy">
+    <img src="assets/demo_1c.png" id="demo-img-1c" class="demo-screen-img" alt="Tác vụ 1C: Bóc tách thuộc tính kỹ thuật quyết định" loading="lazy">
+
+    <!-- Task 2 Images -->
+    <img src="assets/demo_2a.png" id="demo-img-2a" class="demo-screen-img" alt="Tác vụ 2A: Tra cứu gợi ý Top mã HS tiềm năng" loading="lazy">
+    <img src="assets/demo_2b.png" id="demo-img-2b" class="demo-screen-img" alt="Tác vụ 2B: Bảng so sánh đối chiếu hai mã cạnh tranh" loading="lazy">
+
+    <!-- Task 3 Images (Swapped as requested: 3A shows demo_3b, 3B shows demo_3a) -->
+    <img src="assets/demo_3b.png" id="demo-img-3a" class="demo-screen-img" alt="Tác vụ 3A: Chuyên viên thẩm định căn cứ & ký duyệt độc lập" loading="lazy">
+    <img src="assets/demo_3a.png" id="demo-img-3b" class="demo-screen-img" alt="Tác vụ 3B: Khóa snapshot bất biến & mã băm SHA-256" loading="lazy">
+   </div>
+
+   <!-- Mock Window Caption Bar -->
+   <div class="demo-caption-bar">
+    <span id="demo-caption-text">Màn hình 1A · Khởi tạo hồ sơ hàng hóa và nhập mã SKU cùng ngữ cảnh khai báo</span>
+    <div class="demo-step-dots">
+     <span class="step-dot active" data-img="demo-img-1a" title="Bước 1A"></span>
+     <span class="step-dot" data-img="demo-img-1b" title="Bước 1B"></span>
+     <span class="step-dot" data-img="demo-img-1c" title="Bước 1C"></span>
+     <span class="step-dot-divider">·</span>
+     <span class="step-dot" data-img="demo-img-2a" title="Bước 2A"></span>
+     <span class="step-dot" data-img="demo-img-2b" title="Bước 2B"></span>
+     <span class="step-dot-divider">·</span>
+     <span class="step-dot" data-img="demo-img-3a" title="Bước 3A"></span>
+     <span class="step-dot" data-img="demo-img-3b" title="Bước 3B"></span>
+    </div>
    </div>
   </figure>
  </div>

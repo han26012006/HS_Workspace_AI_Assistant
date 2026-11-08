@@ -1508,11 +1508,14 @@ tr:hover td { background-color: color-mix(in srgb, var(--c-pink-soft) 40%, trans
   }
 }
 
-/* ===== PRODUCT DEMO 3-TASK IMAGE SWITCHER ===== */
+/* ===== PRODUCT DEMO 3-TASK & 7-SCREEN INTERACTIVE SWITCHER ===== */
 .demo-task-card {
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.28s cubic-bezier(0.16, 1, 0.3, 1);
   border-left: 4px solid transparent;
+  padding: 16px 18px;
+  margin-bottom: 14px;
+  position: relative;
 }
 .demo-task-card:hover {
   transform: translateX(4px);
@@ -1525,12 +1528,142 @@ tr:hover td { background-color: color-mix(in srgb, var(--c-pink-soft) 40%, trans
 .demo-task-card[data-task="2"].active { border-left-color: var(--c-blue-deep); }
 .demo-task-card[data-task="3"].active { border-left-color: var(--c-mint-deep); }
 
+.demo-sub-badge-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+.sub-step-chip {
+  background: rgba(35, 34, 38, 0.05);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  padding: 3px 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--ink-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-sans);
+}
+.sub-step-chip:hover {
+  background: var(--bg-alt);
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+.sub-step-chip.active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+  box-shadow: 0 2px 8px rgba(35, 34, 38, 0.15);
+}
+:root[data-theme="dark"] .sub-step-chip {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(255, 255, 255, 0.15);
+  color: #C8C5CE;
+}
+:root[data-theme="dark"] .sub-step-chip:hover {
+  background: rgba(255, 255, 255, 0.12);
+  color: #FFFFFF;
+}
+:root[data-theme="dark"] .sub-step-chip.active {
+  background: #FFFFFF;
+  color: #141317;
+  border-color: #FFFFFF;
+}
+
+/* Mockup Window Toolbar & Header */
+.demo-window-header {
+  background: var(--bg-alt);
+  padding: 10px 16px;
+  border-bottom: 1.5px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+.demo-window-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+}
+.demo-window-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.demo-window-title {
+  font-size: 12.5px;
+  color: var(--ink-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  min-width: 160px;
+}
+.demo-window-title b {
+  color: var(--ink);
+}
+.demo-toolbar-tabs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.task-tabs-group {
+  display: flex;
+  gap: 6px;
+}
+.tool-tab {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  padding: 4px 10px;
+  font-size: 11.5px;
+  font-weight: 700;
+  color: var(--ink-secondary);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-family: var(--font-sans);
+  white-space: nowrap;
+}
+.tool-tab:hover {
+  background: var(--c-butter);
+  color: var(--ink);
+  transform: translateY(-1px);
+}
+.tool-tab.active {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+:root[data-theme="dark"] .demo-window-header {
+  background: #1C1B20;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+:root[data-theme="dark"] .tool-tab {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.14);
+  color: #C8C5CE;
+}
+:root[data-theme="dark"] .tool-tab:hover {
+  background: rgba(255, 255, 255, 0.14);
+  color: #FFFFFF;
+}
+:root[data-theme="dark"] .tool-tab.active {
+  background: #FFFFFF;
+  color: #141317;
+  border-color: #FFFFFF;
+}
+
+/* Screens Container with 2940x1610 exact aspect ratio */
 .demo-screens-wrapper {
   position: relative;
-  background: #FFFFFF;
+  background: #F4F5F7;
   overflow: hidden;
-  border-radius: 0 0 var(--r-md) var(--r-md);
-  aspect-ratio: 1400 / 866;
+  aspect-ratio: 2940 / 1610;
   width: 100%;
 }
 .demo-screen-img {
@@ -1539,10 +1672,11 @@ tr:hover td { background-color: color-mix(in srgb, var(--c-pink-soft) 40%, trans
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background: #FFFFFF;
   opacity: 0;
   display: block !important;
-  transition: opacity 0.35s ease, transform 0.35s ease;
+  transition: opacity 0.32s cubic-bezier(0.16, 1, 0.3, 1), transform 0.32s cubic-bezier(0.16, 1, 0.3, 1);
   transform: scale(0.99);
   pointer-events: none;
 }
@@ -1550,6 +1684,67 @@ tr:hover td { background-color: color-mix(in srgb, var(--c-pink-soft) 40%, trans
   opacity: 1;
   transform: scale(1);
   pointer-events: auto;
+}
+
+/* Caption and Step Dots Bar */
+.demo-caption-bar {
+  background: var(--bg-alt);
+  padding: 10px 16px;
+  border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  font-size: 13px;
+  color: var(--ink-secondary);
+}
+.demo-caption-bar span {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.demo-step-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+}
+.step-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--border-strong);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+.step-dot:hover {
+  background: var(--ink-secondary);
+  transform: scale(1.2);
+}
+.step-dot.active {
+  background: var(--c-pink-deep);
+  transform: scale(1.35);
+  box-shadow: 0 0 8px rgba(217, 136, 163, 0.8);
+}
+.step-dot-divider {
+  font-size: 11px;
+  color: var(--ink-muted);
+  opacity: 0.5;
+  margin: 0 2px;
+}
+
+:root[data-theme="dark"] .demo-caption-bar {
+  background: #18171C;
+  border-color: rgba(255, 255, 255, 0.1);
+  color: #C8C5CE;
+}
+:root[data-theme="dark"] .demo-screens-wrapper {
+  background: #121115;
+}
+:root[data-theme="dark"] .demo-screen-img {
+  background: #151419;
 }
 
 /* ===== MOTION & SCROLL REVEAL ===== */

@@ -186,32 +186,81 @@
   }
 
   // ==========================================
-  // 7. KỊCH BẢN KIỂM CHỨNG TÁC VỤ (PRODUCT DEMO)
-  // Pin section until all 3 tasks are scrolled through, switching images!
+  // 7. KỊCH BẢN KIỂM CHỨNG TÁC VỤ (PRODUCT DEMO - 3 TÁC VỤ & 7 MÀN HÌNH MINH HỌA)
+  // Pin section until all 3 tasks & screens are scrolled through!
   // ==========================================
   var demoSection = document.getElementById('demo');
   var demoTaskCards = document.querySelectorAll('.demo-task-card');
   var demoIndicator = document.getElementById('demo-indicator');
+  var demoCaptionText = document.getElementById('demo-caption-text');
+  var demoScreenImages = document.querySelectorAll('.demo-screen-img');
+  var toolTabs = document.querySelectorAll('.tool-tab');
+  var subStepChips = document.querySelectorAll('.sub-step-chip');
+  var stepDots = document.querySelectorAll('.step-dot');
 
-  var taskMeta = {
-    1: {
-      imgId: 'demo-img-1',
-      titleVi: 'Tác vụ 1: Nhập SKU & Bóc tách OCR',
-      titleEn: 'Task 1: SKU Ingestion & OCR Attributes'
+  var screenMeta = {
+    'demo-img-1a': {
+      task: 1,
+      title: 'Tác vụ 1: Nhập SKU & Bóc tách OCR',
+      caption: 'Màn hình 1A · Khởi tạo hồ sơ hàng hóa và nhập mã SKU cùng ngữ cảnh khai báo'
     },
-    2: {
-      imgId: 'demo-img-2',
-      titleVi: 'Tác vụ 2: Tra cứu & Đối chiếu 2 mã cạnh tranh',
-      titleEn: 'Task 2: Lookup & Compare 2 Competing Codes'
+    'demo-img-1b': {
+      task: 1,
+      title: 'Tác vụ 1: Nhập SKU & Bóc tách OCR',
+      caption: 'Màn hình 1B · Tải lên catalogue PDF & OCR trích xuất thuộc tính kỹ thuật tự động'
     },
-    3: {
-      imgId: 'demo-img-3',
-      titleVi: 'Tác vụ 3: Phê duyệt độc lập & Khóa Snapshot',
-      titleEn: 'Task 3: Independent Approval & SHA-256 Seal'
+    'demo-img-1c': {
+      task: 1,
+      title: 'Tác vụ 1: Nhập SKU & Bóc tách OCR',
+      caption: 'Màn hình 1C · Kiểm tra bảng thuộc tính kỹ thuật (1.200W, 220V) và số trang chứng minh'
+    },
+    'demo-img-2a': {
+      task: 2,
+      title: 'Tác vụ 2: Tra cứu & Đối chiếu 2 mã cạnh tranh',
+      caption: 'Màn hình 2A · Truy hồi gợi ý Top mã HS tiềm năng bằng BM25 và đối chứng M0'
+    },
+    'demo-img-2b': {
+      task: 2,
+      title: 'Tác vụ 2: Tra cứu & Đối chiếu 2 mã cạnh tranh',
+      caption: 'Màn hình 2B · Bảng đối chiếu so sánh trực diện hai mã cạnh tranh 8516.79.90 và 8516.79.10'
+    },
+    'demo-img-3a': {
+      task: 3,
+      title: 'Tác vụ 3: Phê duyệt độc lập & Khóa Snapshot',
+      caption: 'Màn hình 3A · Chuyên viên tuân thủ thẩm định căn cứ pháp lý & Ký duyệt 2 cấp độc lập'
+    },
+    'demo-img-3b': {
+      task: 3,
+      title: 'Tác vụ 3: Phê duyệt độc lập & Khóa Snapshot',
+      caption: 'Màn hình 3B · Khóa Snapshot bất biến, băm SHA-256 & Xuất gói hồ sơ ZIP/PDF phục vụ thanh tra 5 năm'
     }
   };
 
-  function switchDemoTask(taskNum) {
+  var screenOrder = [
+    'demo-img-1a',
+    'demo-img-1b',
+    'demo-img-1c',
+    'demo-img-2a',
+    'demo-img-2b',
+    'demo-img-3a',
+    'demo-img-3b'
+  ];
+
+  function showDemoScreen(targetImgId) {
+    if (!screenMeta[targetImgId]) return;
+    var meta = screenMeta[targetImgId];
+    var taskNum = meta.task;
+
+    // 1. Activate Screen Image
+    demoScreenImages.forEach(function(img){
+      if (img.id === targetImgId) {
+        img.classList.add('active');
+      } else {
+        img.classList.remove('active');
+      }
+    });
+
+    // 2. Activate Task Card
     demoTaskCards.forEach(function(card){
       var t = card.getAttribute('data-task');
       if (parseInt(t, 10) === parseInt(taskNum, 10)) {
@@ -221,20 +270,54 @@
       }
     });
 
+    // 3. Switch Toolbar Tabs Group
     [1, 2, 3].forEach(function(num){
-      var img = document.getElementById('demo-img-' + num);
-      if (img) {
-        if (num === parseInt(taskNum, 10)) {
-          img.classList.add('active');
-        } else {
-          img.classList.remove('active');
-        }
+      var grp = document.getElementById('tabs-group-' + num);
+      if (grp) {
+        grp.style.display = (num === taskNum) ? 'flex' : 'none';
       }
     });
 
-    if (demoIndicator && taskMeta[taskNum]) {
-      demoIndicator.textContent = taskMeta[taskNum].titleVi;
+    // 4. Update Tool Tabs
+    toolTabs.forEach(function(tab){
+      if (tab.getAttribute('data-img') === targetImgId) {
+        tab.classList.add('active');
+      } else {
+        tab.classList.remove('active');
+      }
+    });
+
+    // 5. Update Sub-step Chips on Cards
+    subStepChips.forEach(function(chip){
+      if (chip.getAttribute('data-img') === targetImgId) {
+        chip.classList.add('active');
+      } else {
+        chip.classList.remove('active');
+      }
+    });
+
+    // 6. Update Step Dots
+    stepDots.forEach(function(dot){
+      if (dot.getAttribute('data-img') === targetImgId) {
+        dot.classList.add('active');
+      } else {
+        dot.classList.remove('active');
+      }
+    });
+
+    // 7. Update Title & Caption
+    if (demoIndicator) {
+      demoIndicator.textContent = meta.title;
     }
+    if (demoCaptionText) {
+      demoCaptionText.textContent = meta.caption;
+    }
+  }
+
+  function switchDemoTask(taskNum) {
+    if (taskNum === 1) showDemoScreen('demo-img-1a');
+    else if (taskNum === 2) showDemoScreen('demo-img-2a');
+    else if (taskNum === 3) showDemoScreen('demo-img-3a');
   }
 
   if (demoTaskCards.length > 0) {
@@ -245,14 +328,38 @@
       });
     }
 
+    // Click on Task Cards
     demoTaskCards.forEach(function(card){
-      card.addEventListener('click', function(){
-        var taskNum = this.getAttribute('data-task');
+      card.addEventListener('click', function(e){
+        // If clicked on chip directly, don't trigger parent
+        if (e.target.classList.contains('sub-step-chip')) return;
+        var taskNum = parseInt(this.getAttribute('data-task'), 10);
         if (taskNum) switchDemoTask(taskNum);
       });
-      card.addEventListener('mouseenter', function(){
-        var taskNum = this.getAttribute('data-task');
-        if (taskNum) switchDemoTask(taskNum);
+    });
+
+    // Click on Sub-step Chips
+    subStepChips.forEach(function(chip){
+      chip.addEventListener('click', function(e){
+        e.stopPropagation();
+        var imgId = this.getAttribute('data-img');
+        if (imgId) showDemoScreen(imgId);
+      });
+    });
+
+    // Click on Toolbar Tabs
+    toolTabs.forEach(function(tab){
+      tab.addEventListener('click', function(){
+        var imgId = this.getAttribute('data-img');
+        if (imgId) showDemoScreen(imgId);
+      });
+    });
+
+    // Click on Step Dots
+    stepDots.forEach(function(dot){
+      dot.addEventListener('click', function(){
+        var imgId = this.getAttribute('data-img');
+        if (imgId) showDemoScreen(imgId);
       });
     });
 
@@ -262,32 +369,23 @@
       window.ScrollTrigger.create({
         trigger: demoSection,
         start: "top 75px",
-        end: "+=1000",
+        end: "+=1500",
         pin: true,
         pinSpacing: true,
         scrub: 0.3,
         anticipatePin: 1,
         onUpdate: function(self) {
           var p = self.progress; // 0.0 to 1.0
-          var taskNum = 1;
-          if (p < 0.33) {
-            taskNum = 1;
-          } else if (p < 0.67) {
-            taskNum = 2;
-          } else {
-            taskNum = 3;
-          }
-          switchDemoTask(taskNum);
+          var idx = Math.min(Math.floor(p * screenOrder.length), screenOrder.length - 1);
+          showDemoScreen(screenOrder[idx]);
         }
       });
     } else if ('IntersectionObserver' in window) {
       var taskObserver = new IntersectionObserver(function(entries){
         entries.forEach(function(entry){
           if (entry.isIntersecting) {
-            var taskNum = entry.target.getAttribute('data-task');
-            if (taskNum) {
-              switchDemoTask(taskNum);
-            }
+            var taskNum = parseInt(entry.target.getAttribute('data-task'), 10);
+            if (taskNum) switchDemoTask(taskNum);
           }
         });
       }, {
