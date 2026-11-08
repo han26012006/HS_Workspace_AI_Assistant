@@ -366,19 +366,47 @@
     if (typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined' && window.innerWidth >= 900) {
       window.gsap.registerPlugin(window.ScrollTrigger);
 
-      window.ScrollTrigger.create({
+      var demoGrid = document.getElementById('demo-showcase-grid');
+      var demoTrigger = window.ScrollTrigger.create({
         trigger: demoSection,
-        start: "top 75px",
+        start: function() {
+          var grid = document.getElementById('demo-showcase-grid');
+          var sec = document.getElementById('demo');
+          if (grid && sec) {
+            var secRect = sec.getBoundingClientRect();
+            var gridRect = grid.getBoundingClientRect();
+            var gridOffset = gridRect.top - secRect.top;
+            // Center the grid in the viewport, ensuring it stays at least 85px below top navbar
+            var targetGridTop = Math.max(85, Math.round((window.innerHeight - grid.offsetHeight) / 2));
+            var pinStart = targetGridTop - gridOffset;
+            return "top " + pinStart + "px";
+          }
+          return "top 75px";
+        },
         end: "+=1500",
         pin: true,
         pinSpacing: true,
         scrub: 0.3,
         anticipatePin: 1,
+        invalidateOnRefresh: true,
         onUpdate: function(self) {
           var p = self.progress; // 0.0 to 1.0
           var idx = Math.min(Math.floor(p * screenOrder.length), screenOrder.length - 1);
           showDemoScreen(screenOrder[idx]);
         }
+      });
+
+      // Smooth scroll directly to the centered, focused demo view when clicking "✦ Xem Demo"
+      document.querySelectorAll('a[href="#demo"]').forEach(function(btn){
+        btn.addEventListener('click', function(e){
+          if (demoTrigger && typeof demoTrigger.start === 'number') {
+            e.preventDefault();
+            window.scrollTo({
+              top: demoTrigger.start + 2,
+              behavior: 'smooth'
+            });
+          }
+        });
       });
     } else if ('IntersectionObserver' in window) {
       var taskObserver = new IntersectionObserver(function(entries){
