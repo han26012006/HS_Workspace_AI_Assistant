@@ -6,7 +6,7 @@
 <title>Quản lý dự án HS Workspace — Khung CPMAI 4 Sprint & Bằng chứng Phụ lục G | Nhóm 8 · UEH</title>
 <meta name="description" content="Hồ sơ quản lý dự án HS Workspace theo phương pháp luận CPMAI: 24 hạng mục Product Backlog, 22 hạng mục tuần đóng gói, biên bản họp theo Sprint, biểu đồ Burndown, ma trận RACI, AI Canvas, Data Audit và Risk Register R1–R10 theo Phụ lục G.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23232226'/%3E%3Ctext x='30' y='42' font-size='26' text-anchor='middle' fill='%23FAF7F2' font-family='serif' font-weight='700'%3Ehs%3C/text%3E%3Ccircle cx='46' cy='40' r='5' fill='%23F3B5CB'/%3E%3C/svg%3E">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/style.css?v=20261110">
 </head>
 <body class="bg-grid">
 <div class="scroll-progress-bar"></div>
@@ -66,7 +66,7 @@
 
  <div class="hero-visual reveal">
   <div class="collage-frame">
-   <img src="assets/istockphoto-476502554-612x612.jpg" alt="Kiểm tra hàng hóa và dữ liệu hải quan" style="width:100%;height:380px;object-fit:cover;border-radius:var(--r-lg)">
+   <img src="assets/istockphoto-476502554-612x612.jpg" alt="Minh họa quy trình kiểm tra hồ sơ xuất nhập khẩu" style="width:100%;height:380px;object-fit:cover;border-radius:var(--r-lg)">
   </div>
   <div class="collage-badge-floating top-left">
    <span class="sticker sticker-mint">★ CHUẨN CPMAI</span>
@@ -82,7 +82,7 @@
 <!-- SECTION 1: PROJECT CHARTER (Soft Pink Section) -->
 <section class="section section-pink"><div class="container">
  <div class="sec-head center reveal">
-  <span class="eyebrow">✦ Hiến chương dự án (Bảng 2.12 & B03)</span>
+  <span class="eyebrow">Hiến chương dự án</span>
   <h2>1. Project Charter: Mục tiêu, phạm vi và tiêu chí thành công</h2>
   <p>Định hình rõ ràng ranh giới sản phẩm, ràng buộc kỹ thuật và tiêu chí nghiệm thu của đồ án theo cam kết B03.</p>
  </div>
@@ -92,13 +92,13 @@
    <span class="tag">Thông tin cốt lõi</span>
    <h4>Tên dự án & Mục tiêu</h4>
    <p><b>Tên dự án:</b> HS Workspace (Trợ lý phân loại mã HS có căn cứ và lưu hồ sơ giải trình).</p>
-   <p><b>Mục tiêu:</b> Hỗ trợ doanh nghiệp xuất nhập khẩu thu hẹp mã ứng viên, tra cứu căn cứ từ 409 tài liệu V5, đối chiếu thuế suất và đóng gói hồ sơ giải trình 5 năm theo Điều 18 & 77 Luật Hải quan.</p>
+   <p><b>Mục tiêu:</b> Hỗ trợ doanh nghiệp xuất nhập khẩu thu hẹp mã ứng viên, tra cứu căn cứ từ 409 tài liệu V5, đối chiếu thuế suất và đóng gói hồ sơ giải trình 5 năm theo Điều 18 Luật Hải quan 2014.</p>
   </div>
 
   <div class="canvas-cell">
    <span class="tag">Phạm vi nghiệp vụ</span>
    <h4>Product Scope vs Project Scope</h4>
-   <p><b>Product Scope:</b> Ứng dụng tra cứu BM25, đối chứng M0, bóc tách OCR, so sánh mã cạnh tranh, quy trình duyệt 2 cấp chặn tự duyệt, xuất gói ZIP snapshot băm SHA-256 (bản 2.6.1 với 78 test pass).</p>
+   <p><b>Product Scope:</b> Ứng dụng tra cứu BM25, đối chứng M0, bóc tách OCR, so sánh mã cạnh tranh, chặn người lập trùng người duyệt (mức prototype; chưa có xác thực danh tính độc lập/RBAC), xuất gói ZIP snapshot băm SHA-256 (bản 2.6.1 với 78 test pass).</p>
    <p><b>Project Scope:</b> Triển khai 4 Sprint + Tuần 9 đóng gói (07/09 – 09/11/2026), thu thập 967 thông báo XĐTMS, nạp 11.414 dòng HS8 (AHTN 2022), khóa cohort 605 hồ sơ V5, đối chiếu parity Colab và app.</p>
   </div>
 
@@ -107,13 +107,13 @@
    <h4>Người dùng & Khách hàng</h4>
    <p><b>Người dùng chính:</b> Nhân viên XNK (lập hồ sơ tra cứu SKU).</p>
    <p><b>Người duyệt:</b> Chuyên viên tuân thủ / Đại lý hải quan (phê duyệt phương án).</p>
-   <p><b>Khách hàng mục tiêu:</b> Doanh nghiệp nhỏ tự khai (mức giá khảo sát CR7: 749.000 đ/tháng), Kế toán trưởng, Trưởng phòng XNK.</p>
+   <p><b>Khách hàng mục tiêu:</b> Doanh nghiệp nhỏ tự khai (giá thử nghiệm 749.000 đ/tháng (giả định thử nghiệm cho gói Team sau phỏng vấn n=2, chưa phải kết quả khảo sát willingness-to-pay)), Kế toán trưởng, Trưởng phòng XNK.</p>
   </div>
 
   <div class="canvas-cell">
-   <span class="tag">Ràng buộc & Giả định</span>
-   <h4>Ràng buộc & Giả định</h4>
-   <p><b>Ràng buộc:</b> Tuân thủ Luật Hải quan 2014, Luật Thuế XNK số 134, Nghị định 142/2026, Nghị định 330/2026; không tự động truyền tờ khai; ẩn danh toàn bộ PII; ưu tiên on-premise.</p>
+   <span class="tag">Ràng buộc pháp lý</span>
+   <h4>Ràng buộc & Giả định kỹ thuật</h4>
+   <p><b>Ràng buộc:</b> Tuân thủ Luật Hải quan 2014; Luật BVDLCN 91/2025/QH15; Luật Trí tuệ nhân tạo 134/2025/QH15; NĐ 142/2026, NĐ 330/2026; TT 85/2026; không tự động truyền tờ khai; ẩn danh PII; nhánh LLM gọi API ngoài chỉ bật khi có đồng ý và DPA.</p>
    <p><b>Giả định:</b> AI đóng vai trò thu hẹp phạm vi; người có chuyên môn chịu trách nhiệm pháp lý cao nhất đối với quyết định phân loại cuối cùng.</p>
   </div>
 
@@ -159,7 +159,7 @@
    <div class="member-id">MSSV: 31241022870</div>
    <div class="member-roles"><span>Product Owner (PO)</span><span>AI &amp; Data Lead</span></div>
    <ul>
-    <li>Phụ trách 11/24 hạng mục Backlog và 11/22 hạng mục đóng gói Tuần 9.</li>
+    <li>Phụ trách 13/24 hạng mục backlog và 11/22 hạng mục tuần 9.</li>
     <li>Xây dựng pipeline dữ liệu: thu thập 967 thông báo, nạp 11.414 dòng HS8, làm sạch OCR và khóa cohort V5 (605 hồ sơ).</li>
     <li>Huấn luyện &amp; đánh giá mô hình: BM25 (0/94), M0 (25,5%), engine v6 LambdaRank (27,7%) và thử nghiệm LLM (~240 đ/ca).</li>
     <li>Kiểm tra mã băm biểu thuế (CR5), đóng gói ứng dụng v2.6.1 + README và kiểm tra số liệu nộp bài.</li>
@@ -173,7 +173,7 @@
    <div class="member-id">MSSV: 31241023229</div>
    <div class="member-roles"><span>Đồng Scrum Master</span><span>Governance &amp; Compliance</span></div>
    <ul>
-    <li>Điều phối 4 Sprint, quản lý Backlog và chủ trì các phiên họp Sprint (Planning, Review, Retro).</li>
+    <li>Đồng Scrum Master: chủ trì Retro; theo dõi backlog, burndown và risk register.</li>
     <li>Xây dựng Registry pháp lý v0 (D6), Script đánh giá (top-k, KTC 95%) và kiểm định thống kê McNemar (p=0,75).</li>
     <li>Biên soạn AI System Card (Bảng 9.7), quản trị Risk Register AI qua 3 phiên bản (v1, v2, v3) và Phụ lục G.</li>
     <li>Tham gia phỏng vấn khách hàng (03/11), rà soát tuân thủ Luật 134, Nghị định 142/2026 và 330/2026.</li>
@@ -263,7 +263,7 @@
  </div>
 
  <!-- Team Agreement Accordion -->
- <h3 class="editorial-serif reveal" style="font-size:26px;margin:36px 0 16px" data-vi="Thỏa thuận làm việc nhóm 8 điều khoản" data-en="Team Agreement (8 Principles)">Thỏa thuận làm việc nhóm 8 điều khoản</h3>
+ <h3 class="editorial-serif reveal" style="font-size:26px;margin:36px 0 16px" data-vi="Thỏa thuận làm việc của Nhóm 8 (8 điều khoản)" data-en="Team Agreement (8 Principles)">Thỏa thuận làm việc của Nhóm 8 (8 điều khoản)</h3>
  <div class="acc reveal">
   <details open>
    <summary>1. Mục tiêu chung & Quy ước hoàn thành (Definition of Done - DoD)</summary>
@@ -290,7 +290,7 @@
    <div class="acc-body"><p>Tuyệt đối không tải các tệp PDF gốc chứa tên doanh nghiệp, mã số thuế hoặc chữ ký công chức lên kho mã nguồn công khai. Toàn bộ 967 thông báo phải được khử định danh (anonymized) trước khi lập chỉ mục.</p></div>
   </details>
   <details>
-   <summary>7. Cơ chế ra quyết định & Quản lý thay đổi (Change Requests CR1–CR7)</summary>
+   <summary>7. Cơ chế ra quyết định & Quản lý thay đổi (Change Requests CR1–CR8)</summary>
    <div class="acc-body"><p>Các quyết định thay đổi kỹ thuật lớn (CR1 đến CR7) phải được thảo luận, ghi nhận bằng chứng và thống nhất trong biên bản Sprint tương ứng (như chuyển từ tự động chốt mã sang hỗ trợ quyết định CR3, kiểm tra mã băm CR5, dùng V5 CR6, chỉnh giá pilot CR7).</p></div>
   </details>
   <details>
@@ -317,48 +317,51 @@
 <!-- SECTION 3: TIMELINE & CPMAI 4 SPRINTS (Baby Blue Section) -->
 <section class="section section-blue" id="timeline"><div class="container">
  <div class="sec-head center reveal">
-  <span class="eyebrow">✦ Lộ trình CPMAI 4 Sprint & Tuần 9</span>
-  <h2>3. Tiến trình dự án theo 6 giai đoạn CPMAI & 5 Cổng nghiệm thu</h2>
-  <p>Lộ trình thực hiện chuẩn mực Cognitive Project Management for AI qua các mốc thẩm định nghiêm ngặt.</p>
+  <span class="eyebrow">Tiến trình triển khai</span>
+  <h2>3. Tiến trình dự án: 6 pha CPMAI và 4 cổng nghiệm thu</h2>
+  <p>Khung CPMAI gồm 6 pha chuẩn kết hợp 4 Sprint thực thi Agile/Scrum. Tuần 9 đóng gói báo cáo và Kế hoạch Pilot thực địa được ghi nhận riêng ngoài khung CPMAI.</p>
  </div>
 
  <div class="timeline-editorial reveal">
   <div class="timeline-item">
-   <div class="week">Sprint 1 (07/09–20/09)</div>
-   <h4>1. Business Understanding</h4>
-   <span class="gate" style="background:#B8E6D5;color:#184232">Cổng CPMAI 1: Đạt (6/6)</span>
-   <p>Bỏ Contract Risk Auditor, chọn phân loại mã HS (CR1–2). Hoàn thành AI Canvas, Project Charter, thu thập 967 thông báo, nạp 11.414 dòng HS8 và Registry v0.</p>
+   <div class="week">Sprint 1 (07/09–20/09/2026)</div>
+   <h4>Pha 1 & 2: Hiểu bài toán & Hiểu dữ liệu</h4>
+   <span class="gate" style="background:#B8E6D5;color:#184232">Cổng 1: Đạt (6/6)</span>
+   <p>Tiêu chí cổng: Có phạm vi rõ và có quyền dùng dữ liệu. Quyết định: Bỏ Contract Risk Auditor, chọn phân loại mã HS (CR1–2). Hoàn thành AI Canvas, Project Charter, thu thập 967 thông báo XĐTMS, nạp 11.414 dòng HS8 và Registry v0.</p>
   </div>
   <div class="timeline-item">
-   <div class="week">Sprint 2 (21/09–04/10)</div>
-   <h4>2. Data Understanding & Prep</h4>
+   <div class="week">Sprint 2 (21/09–04/10/2026)</div>
+   <h4>Pha 3: Chuẩn bị dữ liệu</h4>
    <span class="gate" style="background:#FFF0C2;color:#6E5300">Cổng 2: Đạt có điều kiện (5/6)</span>
-   <p>OCR và làm sạch dữ liệu, chia tập thời gian train/val/test. Xây baseline BM25 (0/94) và mô hình M0 (25,5%). B12 dời S3 do chưa tiếp cận chuyên gia gán nhãn.</p>
+   <p>Tiêu chí cổng: Có nhãn chuẩn và mô hình cơ sở. Kết quả: OCR làm sạch thông báo, chia tập train/val/test theo thời gian. Baseline BM25 đạt 0/94, mô hình M0 đạt 25,5%. Dời B12 sang S3 do chưa có nhãn chuyên gia thẩm định.</p>
   </div>
   <div class="timeline-item">
-   <div class="week">Sprint 3 (05/10–18/10)</div>
-   <h4>3. Model Development & Validation</h4>
+   <div class="week">Sprint 3 (05/10–18/10/2026)</div>
+   <h4>Pha 4 & 5: Phát triển & Đánh giá mô hình</h4>
    <span class="gate" style="background:#FFF0C2;color:#6E5300">Cổng 3: Đạt có điều kiện (5/7)</span>
-   <p>Engine v6 LambdaRank (27,7%), kiểm định McNemar (p=0,75). Phát hiện 34% đường dẫn biểu thuế ghép nhầm nhánh. Ban hành CR3 (hỗ trợ quyết định) & CR5 (mã băm biểu thuế).</p>
+   <p>Tiêu chí cổng: Đo được lỗi và lợi ích thực. Kết quả: v6+M0 đạt 27,7% (McNemar p = 0,75). Phát hiện 34% đường dẫn biểu thuế ghép nhầm nhánh. Ban hành CR3 (chuyển sang hỗ trợ quyết định) & CR5 (bắt buộc kiểm tra mã băm biểu thuế).</p>
   </div>
   <div class="timeline-item">
-   <div class="week">Sprint 4 (19/10–01/11)</div>
-   <h4>4. System & Operationalization</h4>
+   <div class="week">Sprint 4 (19/10–01/11/2026)</div>
+   <h4>Pha 5 & 6: Đánh giá & Vận hành (Chuẩn bị Pilot)</h4>
    <span class="gate" style="background:#B8E6D5;color:#184232">Cổng 4: Đạt cho Pilot (6/8)</span>
-   <p>Đóng băng V5 (605 hồ sơ) (CR6), kiểm tra mã băm biểu thuế, hoàn thiện App 2.6.1 (78 test pass, 9 skip), mô hình tài chính v3 và System Card. Dời B12 & B18 sang pilot.</p>
+   <p>Tiêu chí cổng: Đủ điều kiện thử nghiệm với khách hàng (chưa đạt cho thương mại hóa và AI tự chốt mã). Đóng băng V5 (605 hồ sơ) (CR6), hoàn thiện App 2.6.1 (78 test pass, 9 skip), mô hình tài chính v3 và AI System Card. Dời B12 & B18 sang pilot.</p>
   </div>
   <div class="timeline-item">
-   <div class="week">Tuần 9 (02/11–09/11)</div>
-   <h4>5. Packaging & Acceptance</h4>
+   <div class="week">Tuần 9 (02/11–09/11/2026)</div>
+   <h4>Đóng gói báo cáo & Nộp bài (Ngoài CPMAI)</h4>
    <span class="gate" style="background:#B8E6D5;color:#184232">Tuần 9: Đạt 22/22 hạng mục</span>
-   <p>Phỏng vấn 2 doanh nghiệp (03/11), chốt CR7 (giá pilot 749.000 đ/tháng cho DN nhỏ tự khai). Đóng gói báo cáo, slide thuyết trình, video demo và nộp bài hoàn tất.</p>
+   <p>Phỏng vấn 2 doanh nghiệp (03/11, D4), ban hành CR7 (giá thử nghiệm 749.000 đ/tháng cho gói Team) và CR8 (nâng app 2.6.1 hoàn thiện luồng demo). Hoàn thành toàn diện 22/22 hạng mục đóng gói báo cáo, slide, video demo và nộp bài đúng hạn.</p>
   </div>
   <div class="timeline-item">
    <div class="week">Giai đoạn tiếp theo</div>
-   <h4>6. Enterprise Pilot Test</h4>
+   <h4>Thử nghiệm Pilot thực địa (Ngoài CPMAI)</h4>
    <span class="gate" style="background:#E0DDEB;color:#3F395A">Kế hoạch Pilot</span>
-   <p>Triển khai thử nghiệm có kiểm soát với 2 doanh nghiệp đã phỏng vấn; giải quyết 2 hạng mục dời lại (B12: bộ nhãn chuyên gia độc lập; B18: engine LLM 2 bước C5).</p>
+   <p>Triển khai thử nghiệm có kiểm soát với 1–2 doanh nghiệp tự khai; đo lường giả thuyết H3 (tiết kiệm ≥10 phút/SKU); giải quyết 2 hạng mục treo trên đường găng: B12 (bộ nhãn chuyên gia độc lập) và B18 (engine LLM hai bước C5).</p>
   </div>
+ </div>
+ <div style="font-size:12.5px;color:var(--ink-secondary);margin-top:16px;text-align:center">
+  <i>Nguồn: Bảng 8.1 (Phân bổ pha CPMAI vào sprint và kết quả tại các cổng) & Bảng 8.2 (Chương 8). Mốc ngày tháng chi tiết theo Phụ lục G.</i>
  </div>
 </div></section>
 
@@ -601,6 +604,7 @@
  <div class="burndown-visual-grid reveal">
   <div class="burndown-step-card">
    <span class="sticker sticker-blue" style="font-size:11px">Bắt đầu (S0)</span>
+   <span style="font-size:11px;color:var(--ink-muted);display:block;margin-top:4px">Thực tế / Lý tưởng</span>
    <div class="burndown-num-wrap">
     <span class="burndown-actual">24</span>
     <span class="burndown-ideal">/ 24</span>
@@ -611,16 +615,18 @@
 
   <div class="burndown-step-card">
    <span class="sticker sticker-mint" style="font-size:11px">Hết Sprint 1</span>
+   <span style="font-size:11px;color:var(--ink-muted);display:block;margin-top:4px">Thực tế / Lý tưởng</span>
    <div class="burndown-num-wrap">
     <span class="burndown-actual">18</span>
     <span class="burndown-ideal">/ 18</span>
    </div>
    <span class="burndown-diff-badge burndown-diff-0">Xong 6 · Chênh lệch: 0</span>
-   <p style="font-size:12px;margin:6px 0 0;color:var(--ink-secondary)">Đạt chuẩn tiến độ 100%</p>
+   <p style="font-size:12px;margin:6px 0 0;color:var(--ink-secondary)">Bám sát kế hoạch lý tưởng</p>
   </div>
 
   <div class="burndown-step-card">
    <span class="sticker sticker-pink" style="font-size:11px">Hết Sprint 2</span>
+   <span style="font-size:11px;color:var(--ink-muted);display:block;margin-top:4px">Thực tế / Lý tưởng</span>
    <div class="burndown-num-wrap">
     <span class="burndown-actual">13</span>
     <span class="burndown-ideal">/ 12</span>
@@ -631,6 +637,7 @@
 
   <div class="burndown-step-card">
    <span class="sticker sticker-pink" style="font-size:11px">Hết Sprint 3</span>
+   <span style="font-size:11px;color:var(--ink-muted);display:block;margin-top:4px">Thực tế / Lý tưởng</span>
    <div class="burndown-num-wrap">
     <span class="burndown-actual">8</span>
     <span class="burndown-ideal">/ 6</span>
@@ -641,6 +648,7 @@
 
   <div class="burndown-step-card">
    <span class="sticker sticker-mint" style="font-size:11px">Hết Sprint 4</span>
+   <span style="font-size:11px;color:var(--ink-muted);display:block;margin-top:4px">Thực tế / Lý tưởng</span>
    <div class="burndown-num-wrap">
     <span class="burndown-actual">2</span>
     <span class="burndown-ideal">/ 0</span>
@@ -860,210 +868,188 @@
  </div>
 
  <!-- RACI Matrix Table (Bảng 8.3 & G.4) -->
- <h3 class="editorial-serif reveal" style="font-size:24px;margin:32px 0 14px">Ma trận RACI Nhóm 8 (Theo Bảng 8.3 & Cột Owner Bảng G.1)</h3>
+ <h3 class="editorial-serif reveal" style="font-size:24px;margin:32px 0 14px">Bảng 8.3. Ma trận RACI Nhóm 8</h3>
  <div class="table-wrap reveal" id="raci">
   <table>
    <thead>
     <tr>
-     <th>Hạng mục công việc / Đầu ra</th>
+     <th>Luồng công việc</th>
      <th style="text-align:center">Nguyễn Đức Minh</th>
-     <th style="text-align:center">Đậu Thị Khánh Linh</th>
      <th style="text-align:center">Huỳnh Kỳ Quế</th>
+     <th style="text-align:center">Đậu Thị Khánh Linh</th>
      <th style="text-align:center">Vương Nguyễn Ngọc Hân</th>
     </tr>
    </thead>
    <tbody>
     <tr>
-     <td><b>AI Canvas & Project Charter (B02, B03)</b></td>
-     <td style="text-align:center"><span class="raci-tag raci-a">A</span></td>
+     <td><b>Phạm vi và quyết định Go/No-Go</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+    </tr>
+    <tr>
+     <td><b>Phân tích kinh doanh, Project Charter</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+    </tr>
+    <tr>
+     <td><b>AI Canvas và tầm nhìn sản phẩm</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
      <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
      <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
+    </tr>
+    <tr>
+     <td><b>Dữ liệu, mô hình và đánh giá</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
+    </tr>
+    <tr>
+     <td><b>Prototype và video demo</b></td>
      <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
-    </tr>
-    <tr>
-     <td><b>Thu thập 967 thông báo, Nạp 11.414 dòng HS8 (B04, B05)</b></td>
-     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
      <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-    </tr>
-    <tr>
-     <td><b>Registry pháp lý v0, D6 (B06)</b></td>
-     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-    </tr>
-    <tr>
-     <td><b>OCR làm sạch thông báo, Split thời gian (B07, B08)</b></td>
-     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-    </tr>
-    <tr>
-     <td><b>Mô hình cơ sở BM25 & Mô hình M0 (B09, B10)</b></td>
-     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-    </tr>
-    <tr>
-     <td><b>Script đánh giá, Kiểm định McNemar (B11, B15)</b></td>
-     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-    </tr>
-    <tr>
-     <td><b>Bộ nhãn chuyên gia độc lập (B12 - Dời pilot)</b></td>
-     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-    </tr>
-    <tr>
-     <td><b>Engine v6 LambdaRank & Thử nghiệm LLM (B13, B14)</b></td>
-     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-    </tr>
-    <tr>
-     <td><b>Prototype 2.2 & Ứng dụng 2.6.1 (78 pass) (B16, B21)</b></td>
-     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
      <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
     </tr>
     <tr>
-     <td><b>BMC, Định giá pilot & Mô hình tài chính v3 (B17, B22)</b></td>
+     <td><b>Mô hình kinh doanh, định giá, tài chính</b></td>
      <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
      <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
-    </tr>
-    <tr>
-     <td><b>Đóng băng V5 (605 hồ sơ) & Test mã băm SHA (B19, B20)</b></td>
-     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
-     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
      <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
     </tr>
     <tr>
-     <td><b>AI System Card & Risk register AI v2 (B23, B24)</b></td>
-     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td><b>Pháp lý, quyền riêng tư, đạo đức AI</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
      <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
      <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
+    </tr>
+    <tr>
+     <td><b>Quản lý sprint và danh mục rủi ro</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
      <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-c">C</span></td>
+    </tr>
+    <tr>
+     <td><b>Kiểm tra số liệu và nộp báo cáo</b></td>
+     <td style="text-align:center"><span class="raci-tag raci-a">A</span> / <span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-r">R</span></td>
+     <td style="text-align:center"><span class="raci-tag raci-i">I</span></td>
     </tr>
    </tbody>
   </table>
+  <div style="font-size:12.5px;color:var(--ink-secondary);margin-top:8px">
+   <i>Nguồn: Bảng 8.3 (Chương 8). Lập từ cột người phụ trách trong sheet Task Assignment (D8). Đức Minh giữ vai trò A ở 5 luồng và phụ trách 11/22 hạng mục tuần đóng gói.</i>
+  </div>
  </div>
 </div></section>
 
-<!-- SECTION 6: AI CANVAS (Warm Cream) -->
-<section class="section section-cream" id="ai-canvas"><div class="container">
+<!-- SECTION 6: AI CANVAS (Soft Lavender Section) -->
+<section class="section section-lavender" id="ai-canvas"><div class="container">
  <div class="sec-head center reveal">
-  <span class="eyebrow">✦ Bản thiết kế AI (Bảng 2.4 & B02)</span>
-  <h2>6. AI Canvas: 11 khối phân tích cơ hội và giới hạn AI</h2>
-  <p>Làm rõ mối quan hệ giữa bài toán kinh doanh, nguồn dữ liệu, năng lực mô hình và điểm can thiệp con người.</p>
+  <span class="eyebrow">Vai trò của AI</span>
+  <h2>6. AI Canvas: Vai trò của AI trong quyết định phân loại mã HS</h2>
+  <p>Định hình rõ quyết định cần AI hỗ trợ, dữ liệu cần thiết, đầu ra có thể kiểm chứng và trách nhiệm của con người theo chuẩn 10 thành phần Bảng 2.4.</p>
  </div>
 
  <div class="canvas-grid reveal">
   <div class="canvas-cell">
-   <span class="tag">01. Khách hàng & Người dùng</span>
-   <h4>User / Buyer</h4>
-   <p><b>Người dùng:</b> Nhân viên XNK lập hồ sơ; Chuyên viên tuân thủ phê duyệt.</p>
-   <p><b>Người mua:</b> Trưởng phòng XNK, Kế toán trưởng.</p>
+   <span class="tag">01. Bài toán</span>
+   <h4>Problem</h4>
+   <p>Nhân viên xuất nhập khẩu cần xác định mã HS dựa trên mô tả và đặc tính hàng hóa, đồng thời đối chiếu với danh mục, chú giải và các văn bản liên quan. Thông tin thiếu hoặc nguồn phân tán có thể làm tăng số vòng tra cứu và khó khăn khi kiểm tra lại quyết định.</p>
   </div>
 
   <div class="canvas-cell">
-   <span class="tag">02. Vấn đề nghiệp vụ</span>
-   <h4>Business Problem</h4>
-   <p>Phân loại mã HS 8 số trong số 11.414 dòng biểu thuế AHTN 2022; căn cứ phân tán; sai mã dẫn tới phạt thuế 10–20% và rủi ro thanh kiểm tra 5 năm.</p>
+   <span class="tag">02. Quyết định cần hỗ trợ</span>
+   <h4>Decision</h4>
+   <p>Hỗ trợ người lập chọn mã HS8 có căn cứ: xếp hạng các mã HS ứng viên; xác định thuộc tính cần bổ sung để phân biệt các phương án; nhận diện trường hợp cần chuyển người có chuyên môn rà soát.</p>
   </div>
 
   <div class="canvas-cell">
-   <span class="tag">03. Quyết định nghiệp vụ</span>
-   <h4>Business Decision</h4>
-   <p>Xác định mã HS 8 số chính xác cho SKU mới; quyết định mức thuế suất MFN/FTA; quyết định hồ sơ có cần xin xác định trước mã số hay không.</p>
+   <span class="tag">03. Giá trị đề xuất</span>
+   <h4>Value</h4>
+   <p>Rút ngắn công sức tra cứu; tăng khả năng truy xuất căn cứ; hỗ trợ phát hiện thông tin chưa đầy đủ và duy trì hồ sơ quyết định có thể kiểm tra lại. Mục tiêu tiết kiệm ≥10 phút/SKU (giả thuyết H3, đo trong pilot; mức nền 5–30 phút).</p>
   </div>
 
   <div class="canvas-cell">
-   <span class="tag">04. Cơ hội ứng dụng AI</span>
-   <h4>AI Opportunity</h4>
-   <p>Thu hẹp danh sách ứng viên từ 11.414 dòng xuống top 3–5 mã tiềm năng; tự động tìm đoạn chú giải loại trừ liên quan để giảm 30 phút tra cứu/SKU.</p>
+   <span class="tag">04. Dữ liệu đầu vào</span>
+   <h4>Input Data</h4>
+   <p>Mô tả hàng hóa, thông số kỹ thuật và thuộc tính đã xác minh; chứng từ liên quan; danh mục HS, chú giải, SEN và tiền lệ phân loại. Mã HS đang khai cần được tách biệt khỏi đầu vào phân loại mặc định nhằm hạn chế thiên lệch.</p>
   </div>
 
   <div class="canvas-cell">
-   <span class="tag">05. Dữ liệu đầu vào</span>
-   <h4>Data Inputs</h4>
-   <p>Mô tả hàng hóa, thành phần, cấu tạo, công dụng từ catalogue; 409 tài liệu pháp lý V5; 967 thông báo xác định trước mã số đã ban hành.</p>
+   <span class="tag">05. Mô hình và công cụ</span>
+   <h4>Model &amp; Tools</h4>
+   <p>Kết hợp truy xuất thông tin, xếp hạng ứng viên và cơ chế kiểm soát đầu ra. BM25 được sử dụng làm phương án truy xuất cục bộ mặc định; LLM là thành phần tùy chọn, chỉ hỗ trợ lập luận trong phạm vi dữ liệu kiểm soát (chỉ bật khi có DPA).</p>
   </div>
 
   <div class="canvas-cell">
-   <span class="tag">06. Năng lực của AI</span>
-   <h4>AI Capabilities</h4>
-   <p>Truy hồi văn bản BM25 + BGE-M3; xếp hạng mã HS (mô hình M0, v6 LambdaRank); phát hiện thuộc tính còn thiếu; cảnh báo mã tương tự đang khai khác nhau.</p>
+   <span class="tag">06. Đầu ra</span>
+   <h4>Output</h4>
+   <p>Các mã HS ứng viên kèm lý do và nguồn tham chiếu; thuộc tính còn thiếu; cảnh báo đối với trường hợp chưa đủ cơ sở; thông tin so sánh và hồ sơ được người dùng phê duyệt.</p>
   </div>
 
   <div class="canvas-cell">
-   <span class="tag">07. Giá trị kỳ vọng</span>
-   <h4>Expected Value</h4>
-   <p>Tiết kiệm 30 phút/SKU (lợi ích 22,5 triệu đ/năm ở 300 SKU); nâng cao tính nhất quán trong danh mục; hồ sơ lưu trữ đầy đủ căn cứ sẵn sàng giải trình.</p>
+   <span class="tag">07. Vai trò con người</span>
+   <h4>Human-in-the-loop</h4>
+   <p>Người lập bổ sung dữ liệu, so sánh và lựa chọn phương án; người có thẩm quyền rà soát, phê duyệt hoặc chuyển chuyên gia. Hệ thống không tự động truyền tờ khai hải quan và không tự chốt mã.</p>
   </div>
 
   <div class="canvas-cell">
-   <span class="tag">08. Chi phí khi sai sót</span>
-   <h4>Cost of Error</h4>
-   <p><b>Rất cao:</b> Phạt thiếu thuế 10%–20%, tiền chậm nộp, bị ấn định thuế sau thông quan. Hậu quả lớn hơn nhiều so với vài phút tra cứu thủ công.</p>
+   <span class="tag">08. Phản hồi</span>
+   <h4>Feedback</h4>
+   <p>Ghi nhận mã được chọn, phương án bị loại, lý do điều chỉnh và chứng từ bổ sung. Các chỉnh sửa của người dùng phải qua quy trình kiểm tra trước khi được xem xét sử dụng làm dữ liệu huấn luyện.</p>
   </div>
 
   <div class="canvas-cell">
-   <span class="tag">09. Can thiệp của con người</span>
-   <h4>Human Intervention</h4>
-   <p><b>Bắt buộc 100%:</b> Dừng khi thiếu thuộc tính; chuyên viên đối chiếu lý do loại trừ; quy định phần mềm chặn tự duyệt; người ký chịu trách nhiệm pháp lý.</p>
-  </div>
-
-  <div class="canvas-cell span-2">
-   <span class="tag">10. Phương pháp đánh giá</span>
-   <h4>Evaluation Approach</h4>
-   <p>Đo lường trên cohort đóng băng 605 hồ sơ V5 theo split thời gian. Thước đo chính: Top-1 và Top-3 độ chính xác ở cấp 4, 6 và 8 số; tỷ lệ trích dẫn đúng số trang nguồn; kiểm tra parity giữa Colab và app.</p>
+   <span class="tag">09. Đánh giá hiệu quả</span>
+   <h4>Evaluation</h4>
+   <p>Đánh giá thời gian xử lý ròng, lỗi phân loại sau phê duyệt, mức độ đầy đủ của căn cứ và khả năng tái dựng quyết định. Các lỗi liên quan đến giấy phép, chính sách và FTA đánh giá riêng, không gộp vào accuracy chung.</p>
   </div>
 
   <div class="canvas-cell">
-   <span class="tag">11. Thử nghiệm GTM</span>
-   <h4>Go-to-Market Hypothesis</h4>
-   <p>Ưu tiên doanh nghiệp nhỏ tự khai (CR7, giá 749.000 đ/tháng); thâm nhập qua rà soát danh mục SKU đã khai, sau đó mời tham gia pilot có người duyệt.</p>
+   <span class="tag">10. Rủi ro và kiểm soát</span>
+   <h4>Risks &amp; Controls</h4>
+   <p>Kiểm soát thông tin thiếu, nguồn không phù hợp, trích dẫn sai, ảo giác (hallucination) và xu hướng tin tưởng quá mức vào AI. Có cơ chế từ chối, kiểm tra nguồn, giám sát và rollback khi phát hiện lỗi.</p>
   </div>
+ </div>
+ <div style="font-size:12.5px;color:var(--ink-secondary);margin-top:16px;text-align:center">
+  <i>Nguồn: Bảng 2.4 (Chương 2). AI Canvas chuẩn 10 thành phần của HS Workspace.</i>
  </div>
 </div></section>
 
 <!-- SECTION 7: DATA AUDIT & STATS STRIP (Mint Section) -->
 <section class="section section-mint" id="data-audit"><div class="container">
  <div class="sec-head center reveal">
-  <span class="eyebrow">✦ Kiểm toán dữ liệu (B04, B05, B19)</span>
+  <span class="eyebrow">Kiểm toán dữ liệu</span>
   <h2>7. Báo cáo Kiểm toán Dữ liệu</h2>
-  <p>Kiểm toán toàn diện các tầng dữ liệu từ thu thập thô 967 thông báo, 11.414 dòng HS8, đến đóng băng cohort V5 (605 hồ sơ).</p>
+  <p>Kiểm toán toàn diện các tầng dữ liệu: 961 thông báo XĐTMS rút về cohort V5 (605 hồ sơ), 11.414 dòng HS8 và kho tri thức chú giải.</p>
  </div>
 
  <div class="stats-strip reveal">
-  <div class="stat-box">
-   <div class="num">967</div>
-   <div class="lbl">Thông báo XĐTMS thu thập thô kèm manifest và kiểm tra chất lượng OCR.</div>
+  <div class="stat-box" style="padding:24px 16px">
+   <div class="num" style="font-size:clamp(20px, 2vw, 28px);white-space:nowrap;letter-spacing:-0.01em">961 → 605</div>
+   <div class="lbl">Cohort V5: thu thập 961 thông báo thô → giữ 605, loại 356 ca thiếu dữ kiện cốt lõi (Ch.3).</div>
   </div>
-  <div class="stat-box">
-   <div class="num">11.414</div>
-   <div class="lbl">Dòng danh mục AHTN 2022 cấp 8 số (D1) nạp kèm mã băm SHA xác thực.</div>
+  <div class="stat-box" style="padding:24px 16px">
+   <div class="num" style="font-size:clamp(20px, 2vw, 28px);white-space:nowrap;letter-spacing:-0.01em">414 / 97 / 94</div>
+   <div class="lbl">Phân chia theo thời gian (Split): 414 Train / 97 Valid / 94 Test; bao phủ 281 mã HS8 phân biệt.</div>
   </div>
-  <div class="stat-box">
-   <div class="num">605</div>
-   <div class="lbl">Hồ sơ trong Cohort V5 đóng băng (414 train / 97 valid / 94 test, 281 mã HS8).</div>
+  <div class="stat-box" style="padding:24px 16px">
+   <div class="num" style="font-size:clamp(20px, 2vw, 28px);white-space:nowrap;letter-spacing:-0.01em">50,6%</div>
+   <div class="lbl">Nhãn rơi vào dòng "Loại khác" (D2); 54% mã HS8 của tập test chưa từng xuất hiện trong tập train.</div>
   </div>
-  <div class="stat-box">
-   <div class="num">409</div>
-   <div class="lbl">Tài liệu pháp lý & 16.061 đoạn văn bản chú giải được lập chỉ mục trong Kho tri thức V5.</div>
+  <div class="stat-box" style="padding:24px 16px">
+   <div class="num" style="font-size:clamp(20px, 2vw, 28px);white-space:nowrap;letter-spacing:-0.01em">59 ngày</div>
+   <div class="lbl">Trung vị thời gian nộp hồ sơ đến khi có thông báo (IQR 36–84 ngày; n=243); 0 nhãn chuyên gia độc lập.</div>
   </div>
  </div>
 
@@ -1072,15 +1058,15 @@
    <thead>
     <tr>
      <th>Tầng dữ liệu</th>
-     <th>Hiện trạng kiểm tra theo Phụ lục G</th>
+     <th>Hiện trạng kiểm tra & Cơ sở dữ liệu</th>
      <th>Hệ quả & Quyết định xử lý</th>
     </tr>
    </thead>
    <tbody>
     <tr>
      <td><b>967 Thông báo XĐTMS (B04)</b></td>
-     <td>Thu thập thô 967 thông báo kèm manifest. Tiến hành OCR và làm sạch trong Sprint 2 (B07).</td>
-     <td>Ghi nhận log lỗi OCR, lọc bỏ các văn bản rách nát hoặc mất thông tin kỹ thuật cốt lõi.</td>
+     <td>Thu thập thô kèm manifest. Tiến hành OCR và làm sạch dữ liệu trong Sprint 2 (B07).</td>
+     <td>Ghi nhận log lỗi OCR; chuẩn bị dữ liệu đầu vào cho bước tạo cohort kiểm định.</td>
     </tr>
     <tr>
      <td><b>11.414 Dòng AHTN 2022 (B05)</b></td>
@@ -1089,38 +1075,41 @@
     </tr>
     <tr>
      <td><b>Cohort V5 đóng băng (B19)</b></td>
-     <td>605 hồ sơ, phân chia theo thời gian: 414 train / 97 valid / 94 test (B08). Bao phủ 281 mã HS8 phân biệt.</td>
+     <td>Cohort V5: 961 thông báo → giữ 605, loại 356 (tiêu chí loại: xem Ch.3). Chia thời gian: 414 train / 97 valid / 94 test (B08).</td>
      <td>Ban hành CR6 thống nhất dùng V5; tạo Manifest V5 + SHA-256 khóa bất biến chống rò rỉ nhãn.</td>
     </tr>
     <tr>
      <td><b>Bộ nhãn chuyên gia (B12)</b></td>
-     <td>Chưa tiếp cận được hội đồng chuyên gia độc lập trong phạm vi 9 tuần của đồ án học phần.</td>
+     <td>Chưa tiếp cận được hội đồng chuyên gia độc lập trong phạm vi 9 tuần của đồ án học phần (hiện có 0 nhãn chuyên gia).</td>
      <td>Chuyển B12 sang giai đoạn Pilot; tạm dùng nhãn chính thức từ thông báo của cơ quan Hải quan.</td>
     </tr>
     <tr>
-     <td><b>Kho tri thức V5 (D6)</b></td>
+     <td><b>Kho tri thức V5</b></td>
      <td>409 tài liệu pháp lý, 4.337 đơn vị và 16.061 đoạn văn bản chú giải HS được lập chỉ mục SQLite FTS5.</td>
-     <td>Đảm bảo truy hồi văn bản dưới 100ms; trích dẫn có số trang nguồn minh bạch phục vụ giải trình.</td>
+     <td>Hỗ trợ trích xuất căn cứ pháp lý minh bạch kèm số trang nguồn phục vụ giải trình.</td>
     </tr>
    </tbody>
   </table>
  </div>
 
  <div class="callout reveal" style="margin-top:24px">
-  <strong>Bài học kỹ thuật về sửa lỗi kiểu dữ liệu và rò rỉ tiền lệ (D3 & B09):</strong>
-  Trong Sprint 2, khi chạy thử nghiệm BM25 ban đầu, kết quả trả về 0/94 ca đúng (D3) do thư viện Pandas tự động chuyển cột mã thành số thực (float) khi có ô trống, làm mất số 0 đầu chuỗi mã HS (ví dụ <code>"08045020"</code> thành <code>8045020.0</code>). Nhóm đã sửa triệt để kiểu dữ liệu sang chuỗi, chuẩn hóa định dạng và áp dụng mặt nạ (masking) theo thời gian. Sau khi sửa, mô hình M0 đạt độ chính xác 25,5% và engine v6 LambdaRank đạt 27,7% (McNemar p = 0,75).
+  <strong>Kết quả đánh giá mô hình cơ sở & Re-ranking (D3 & B09, B10, B13):</strong>
+  BM25 trên danh mục đạt 0/94 ca đúng ở cấp HS8 (D3) — đây là kết quả baseline thuần từ vựng trên danh mục AHTN 2022 do câu chữ biểu thuế mang tính khái quát, khác biệt lớn với ngôn ngữ chứng từ thực tế. Mô hình phân cấp M0 nâng độ chính xác lên 25,5% và engine v6 LambdaRank đạt 27,7% (khoảng tin cậy KTC 95%: 19,6–37,4%; kiểm định McNemar p = 0,75 so với M0 trên 94 ca test).
+ </div>
+ <div style="font-size:12.5px;color:var(--ink-secondary);margin-top:12px;text-align:center">
+  <i>Nguồn: Số liệu D2 trong Chương 1, D3 trong Chương 5 và System Card trong Chương 9.</i>
  </div>
 </div></section>
 
 <!-- SECTION 8: RISK REGISTER (Dark Section) -->
 <section class="section-dark" id="risk-register"><div class="container">
  <div class="sec-head reveal">
-  <span class="eyebrow" style="background:#28272E;color:#FFFFFF;border-color:rgba(255,255,255,0.2)">✦ BẰNG CHỨNG PHỤ LỤC G.5</span>
+  <span class="eyebrow" style="background:#28272E;color:#FFFFFF;border-color:rgba(255,255,255,0.2)">Quản trị rủi ro</span>
   <h2 class="editorial-serif" style="font-size:clamp(32px,3.8vw,52px)">
-   8. Risk Register: <span class="tape tape-pink">Rủi ro Quản lý Dự án (R1–R10)</span> & Lịch sử AI
+   8. Risk Register: <span class="tape tape-pink">Rủi ro Dự án (R1–R10)</span> & 15 Rủi ro AI v3
   </h2>
   <p style="color:#B5B2BE">
-   Theo dõi tiến trình quản trị 10 rủi ro quản lý dự án (Bảng G.4) và lịch sử phát triển 3 phiên bản Risk Register AI (Bảng G.5).
+   Theo dõi tiến trình quản trị 10 rủi ro quản lý dự án (Bảng G.4) và danh mục 15 rủi ro AI v3 phân nhóm theo NIST AI RMF (Bảng 9.6).
   </p>
  </div>
 
@@ -1168,7 +1157,7 @@
      <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
      <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
      <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
-     <td style="text-align:center"><span class="risk-level-tag risk-med" style="background:#FFF0C2;color:#6E5300">Chuyển pilot</span></td>
+     <td style="text-align:center"><span class="risk-level-tag risk-transferred">Chuyển pilot</span></td>
      <td style="color:#D4D2DB">Minh</td>
     </tr>
     <tr>
@@ -1178,7 +1167,7 @@
      <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
      <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
      <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
-     <td style="text-align:center"><span class="risk-level-tag risk-med" style="background:#FFF0C2;color:#6E5300">Theo dõi</span></td>
+     <td style="text-align:center"><span class="risk-level-tag risk-active">Theo dõi</span></td>
      <td style="color:#D4D2DB">Minh</td>
     </tr>
     <tr>
@@ -1198,7 +1187,7 @@
      <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
      <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
      <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
-     <td style="text-align:center"><span class="risk-level-tag risk-med" style="background:#FFF0C2;color:#6E5300">Chuyển pilot</span></td>
+     <td style="text-align:center"><span class="risk-level-tag risk-transferred">Chuyển pilot</span></td>
      <td style="color:#D4D2DB">Quế</td>
     </tr>
     <tr>
@@ -1238,13 +1227,139 @@
      <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
      <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
      <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
-     <td style="text-align:center"><span class="risk-level-tag risk-med" style="background:#FFF0C2;color:#6E5300">Theo dõi</span></td>
+     <td style="text-align:center"><span class="risk-level-tag risk-active">Theo dõi</span></td>
      <td style="color:#D4D2DB">K.Linh</td>
     </tr>
    </tbody>
   </table>
   <div style="font-size:12.5px;color:#9E9BA8;margin-top:8px">
    <i>Nguồn: Bảng 8.5 (R1, R3–R6, R9) và tái dựng (R2, R7, R8, R10) theo Phụ lục G.5.</i>
+  </div>
+ </div>
+
+ <!-- Bảng 9.6: Danh mục 15 Rủi ro AI v3 (NIST AI RMF) -->
+ <h3 class="editorial-serif reveal" style="font-size:24px;color:#FFFFFF;margin:32px 0 14px">Bảng 9.6. Risk Register AI v3 (15 rủi ro nhóm theo NIST AI RMF)</h3>
+ <div class="table-wrap reveal" style="background:#232228;border-color:rgba(255,255,255,0.15);margin-bottom:32px">
+  <table>
+   <thead>
+    <tr style="background:#1B1A1F">
+     <th style="color:#FFFFFF;width:60px">Mã</th>
+     <th style="color:#FFFFFF">Rủi ro hệ thống AI</th>
+     <th style="color:#FFFFFF;text-align:center;width:90px">Mức</th>
+     <th style="color:#FFFFFF;width:110px">Owner</th>
+     <th style="color:#FFFFFF">Chỉ báo giám sát chính</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr style="background:rgba(235,94,85,0.08)">
+     <td><b style="color:#FFFFFF">G1</b></td>
+     <td style="color:#D4D2DB">Chưa có rà soát pháp lý độc lập; chưa thông báo phân loại theo Luật 134</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
+     <td style="color:#D4D2DB">K.Linh</td>
+     <td style="color:#D4D2DB">Số văn bản đã đối chiếu bản gốc / tổng</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">G2</b></td>
+     <td style="color:#D4D2DB">Tranh chấp trách nhiệm khi gợi ý sai</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
+     <td style="color:#D4D2DB">Quế</td>
+     <td style="color:#D4D2DB">Số khiếu nại phát sinh mỗi quý</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">G3</b></td>
+     <td style="color:#D4D2DB">Phụ thuộc một nhà cung cấp LLM</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
+     <td style="color:#D4D2DB">Minh</td>
+     <td style="color:#D4D2DB">Số thay đổi API gây ảnh hưởng</td>
+    </tr>
+    <tr style="background:rgba(235,94,85,0.08)">
+     <td><b style="color:#FFFFFF">M1</b></td>
+     <td style="color:#D4D2DB">Top-1 chỉ đạt 27,7% (khoảng tin cậy KTC 95%: 19,6–37,4%)</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
+     <td style="color:#D4D2DB">Minh</td>
+     <td style="color:#D4D2DB">Top-1, HS4 top-3 theo từng phiên bản</td>
+    </tr>
+    <tr style="background:rgba(235,94,85,0.08)">
+     <td><b style="color:#FFFFFF">M2</b></td>
+     <td style="color:#D4D2DB">0 nhãn chuyên gia thẩm định độc lập</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
+     <td style="color:#D4D2DB">Minh</td>
+     <td style="color:#D4D2DB">Số nhãn chuyên gia / 94 ca test</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">M3</b></td>
+     <td style="color:#D4D2DB">Quy định thay đổi (TT 85/2026, Luật 11/2026)</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
+     <td style="color:#D4D2DB">K.Linh</td>
+     <td style="color:#D4D2DB">Số ngày trễ cập nhật văn bản</td>
+    </tr>
+    <tr style="background:rgba(235,94,85,0.08)">
+     <td><b style="color:#FFFFFF">M4</b></td>
+     <td style="color:#D4D2DB">Lỗi biểu thuế 34% nhánh anh em</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
+     <td style="color:#D4D2DB">Minh</td>
+     <td style="color:#D4D2DB">Tỷ lệ đường dẫn sai trong SQLite</td>
+    </tr>
+    <tr style="background:rgba(235,94,85,0.08)">
+     <td><b style="color:#FFFFFF">Me1</b></td>
+     <td style="color:#D4D2DB">Chưa có future-test, tập kiểm thử chưa hoàn toàn độc lập</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
+     <td style="color:#D4D2DB">Minh</td>
+     <td style="color:#D4D2DB">Tình trạng có/chưa có bộ future-test</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">Me2</b></td>
+     <td style="color:#D4D2DB">Không ổn định với hàng gần giống (ca 534–536)</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
+     <td style="color:#D4D2DB">Minh</td>
+     <td style="color:#D4D2DB">Tỷ lệ cặp gần giống bị gán mã khác nhau</td>
+    </tr>
+    <tr style="background:rgba(235,94,85,0.08)">
+     <td><b style="color:#FFFFFF">Me3</b></td>
+     <td style="color:#D4D2DB">C5 chưa chạy; chưa đo ảo giác của lý do phân loại</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
+     <td style="color:#D4D2DB">Minh</td>
+     <td style="color:#D4D2DB">Tỷ lệ lý do có trích dẫn khớp chú giải</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">Me4</b></td>
+     <td style="color:#D4D2DB">OCR đọc sai làm F1 điền sai thông tin</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
+     <td style="color:#D4D2DB">Minh</td>
+     <td style="color:#D4D2DB">Tỷ lệ trường thông tin bị người dùng sửa</td>
+    </tr>
+    <tr style="background:rgba(235,94,85,0.08)">
+     <td><b style="color:#FFFFFF">Ma1</b></td>
+     <td style="color:#D4D2DB">Khóa API dùng chung, chưa có phân quyền RBAC</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-high">Cao</span></td>
+     <td style="color:#D4D2DB">Minh</td>
+     <td style="color:#D4D2DB">Số endpoint có kiểm tra vai trò / 45</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">Ma2</b></td>
+     <td style="color:#D4D2DB">Rò rỉ dữ liệu doanh nghiệp qua API bên ngoài</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
+     <td style="color:#D4D2DB">K.Linh</td>
+     <td style="color:#D4D2DB">Số lần gọi API không có bản ghi đồng ý</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">Ma3</b></td>
+     <td style="color:#D4D2DB">Người dùng chọn mã theo mức thuế ở F5 ("để an toàn")</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
+     <td style="color:#D4D2DB">Hân</td>
+     <td style="color:#D4D2DB">Tỷ lệ đổi mã sau khi xem bảng thuế F5</td>
+    </tr>
+    <tr>
+     <td><b style="color:#FFFFFF">Ma4</b></td>
+     <td style="color:#D4D2DB">Hòa vốn cần 7 khách hàng trả phí pilot</td>
+     <td style="text-align:center"><span class="risk-level-tag risk-med">TB</span></td>
+     <td style="color:#D4D2DB">Quế</td>
+     <td style="color:#D4D2DB">Số khách hàng trả phí thực tế / 7</td>
+    </tr>
+   </tbody>
+  </table>
+  <div style="font-size:12.5px;color:#9E9BA8;margin-top:8px">
+   <i>Nguồn: Bảng 9.6 (Chương 9). 7 dòng in đậm viền đỏ là rủi ro cao chặn thương mại hóa (NO-GO). Owner đã điều chỉnh theo đề xuất Phụ lục G (G2, Ma4 giao Quế; Ma3 giao Hân).</i>
   </div>
  </div>
 
@@ -1286,7 +1401,7 @@
    </tbody>
   </table>
   <div style="font-size:12.5px;color:#9E9BA8;margin-top:8px">
-   <i>Nguồn: Bảng 9.6 (v3). Các bản v1 và v2 được lưu trữ trong thư mục dự án.</i>
+   <i>Nguồn: Bảng 9.6 (v3) & Phụ lục G.5. Các bản v1 và v2 được lưu trữ trong thư mục đồ án.</i>
   </div>
  </div>
 </div></section>
@@ -1294,74 +1409,70 @@
 <!-- SECTION 9: AI SYSTEM CARD (Warm Cream) -->
 <section class="section section-cream" id="system-card"><div class="container">
  <div class="sec-head center reveal">
-  <span class="eyebrow">✦ Minh bạch hệ thống (B23 & Bảng 9.7)</span>
-  <h2>9. AI System Card: Công bố đạo đức và năng lực AI</h2>
-  <p>Tài liệu công bố công khai mục đích sử dụng, phạm vi ngoài thiết kế, dữ liệu và các giới hạn kỹ thuật theo chuẩn AI Ethics.</p>
+  <span class="eyebrow">Minh bạch hệ thống</span>
+  <h2>9. AI System Card: Công bố năng lực và giới hạn hệ thống</h2>
+  <p>Tài liệu công bố công khai mục đích sử dụng, phạm vi ngoài thiết kế, các giới hạn kỹ thuật và phân loại pháp lý theo chuẩn Bảng 9.7.</p>
  </div>
 
- <div class="canvas-grid reveal">
-  <div class="canvas-cell span-2">
-   <span class="tag" data-vi="Mục đích sử dụng" data-en="Intended Scope">Mục đích sử dụng</span>
-   <h4 data-vi="Mục đích thiết kế" data-en="Intended Use">Mục đích thiết kế</h4>
-   <p>Hệ thống được thiết kế để hỗ trợ nhân viên xuất nhập khẩu và chuyên viên tuân thủ tại Việt Nam:</p>
-   <ul>
-    <li>Thu hẹp phạm vi tìm kiếm mã HS 8 số trong số 11.414 dòng biểu thuế AHTN 2022;</li>
-    <li>Truy hồi các đoạn văn bản pháp lý liên quan từ Chú giải chi tiết HS và Biểu thuế XNK;</li>
-    <li>Đối chiếu trực diện các mã ứng viên và phân tích chênh lệch thuế suất;</li>
-    <li>Quản lý quy trình phê duyệt hai cấp độc lập và xuất hồ sơ snapshot băm SHA-256 phục vụ lưu trữ 5 năm.</li>
-   </ul>
+ <div class="table-wrap reveal" style="margin-bottom:28px">
+  <table>
+   <thead>
+    <tr>
+     <th style="width:160px">Mục công bố</th>
+     <th>Nội dung chi tiết theo Bảng 9.7 (Chương 9)</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td><b>Hệ thống</b></td>
+     <td>Mô hình v6+M0 (mặc định), C5 LLM hai tầng (tùy chọn, chỉ bật khi có đồng ý và DPA); backend FastAPI 45 endpoint; 78 test Python pass, 9 skip.</td>
+    </tr>
+    <tr>
+     <td><b>Mục đích thiết kế</b></td>
+     <td>F1 tự điền; F2 kiểm tra dữ kiện; F3 gợi ý HS8; F4 đối chiếu căn cứ; F5 tính thuế để so sánh; F6 phê duyệt nội bộ; F7 đóng gói snapshot băm SHA-256.</td>
+    </tr>
+    <tr>
+     <td><b>Không nên dùng cho</b></td>
+     <td>Tự nộp tờ khai hải quan; chọn mã theo mức thuế suất thấp; thay thế thủ tục xác định trước mã số (XĐTMS); hàng hóa có mã chưa từng gặp; đưa ra kết luận pháp lý thay cơ quan Hải quan.</td>
+    </tr>
+    <tr>
+     <td><b>Dữ liệu đánh giá</b></td>
+     <td>Cohort V5: 961 → 605 (414 train / 97 valid / 94 test), loại 356 hồ sơ; 281 mã HS8; 50,6% nhãn thuộc dòng "Loại khác"; 0 nhãn do chuyên gia thẩm định độc lập.</td>
+    </tr>
+    <tr>
+     <td><b>Kết quả thực nghiệm (94 ca test)</b></td>
+     <td>Top-1: v6+M0 đạt 27,7% (khoảng tin cậy KTC 95%: 19,6–37,4%), M0 đạt 25,5%, p = 0,75; HS4 top-3 đạt 70,2%; recall@30 đạt 62,8%; BM25 trên danh mục đạt 0/94; mã chưa từng gặp chỉ đúng 0–2/51 ca; C5: chờ chạy.</td>
+    </tr>
+    <tr>
+     <td><b>Chi phí LLM</b></td>
+     <td>Ước tính ~240 đ/ca (gọi API ngoài theo yêu cầu).</td>
+    </tr>
+    <tr>
+     <td><b>Quyền riêng tư</b></td>
+     <td>Đồng ý theo từng lần gọi; chỉ gửi mô tả hàng hóa, không gửi tệp chứng từ gốc; thiết lập <code>store=false</code>; ẩn danh toàn bộ dữ liệu demo.</td>
+    </tr>
+    <tr>
+     <td><b>Giới hạn &amp; Hạn chế</b></td>
+     <td>Lỗi biểu thuế 34% nhánh anh em (đang sửa); chưa ổn định với hàng gần giống (ca 534–536); tập kiểm thử chưa hoàn toàn độc lập; dùng chung một API key cho 45 endpoint, cơ chế chặn tự duyệt ở mức prototype (chưa có RBAC/xác thực danh tính).</td>
+    </tr>
+    <tr>
+     <td><b>Phân loại pháp lý</b></td>
+     <td>Tự xếp mức rủi ro trung bình (theo Luật Trí tuệ nhân tạo 134/2025/QH15); chưa gửi thông báo cho Bộ Khoa học và Công nghệ.</td>
+    </tr>
+    <tr>
+     <td><b>Phụ trách / Cập nhật</b></td>
+     <td>Nguyễn Đức Minh, Đậu Thị Khánh Linh, Huỳnh Kỳ Quế, Vương Nguyễn Ngọc Hân / Ngày cập nhật: 10/11/2026.</td>
+    </tr>
+   </tbody>
+  </table>
+  <div style="font-size:12.5px;color:var(--ink-secondary);margin-top:8px">
+   <i>Nguồn: Bảng 9.7 (Chương 9). Cấu trúc theo Mitchell et al. (2019) và dữ liệu D2, D3, D7.</i>
   </div>
+ </div>
 
-  <div class="canvas-cell">
-   <span class="tag" data-vi="Giới hạn phạm vi" data-en="Boundary Limits">Giới hạn phạm vi</span>
-   <h4 data-vi="Phạm vi không áp dụng" data-en="Out-of-Scope Use">Phạm vi không áp dụng</h4>
-   <ul>
-    <li>Không dùng để tự động quyết định và truyền tờ khai hải quan mà không có chuyên viên duyệt;</li>
-    <li>Không dùng để thay thế phán quyết chính thức của Cơ quan Hải quan;</li>
-    <li>Không dùng để xác định trị giá tính thuế hoặc xuất xứ hàng hóa.</li>
-   </ul>
-  </div>
-
-  <div class="canvas-cell">
-   <span class="tag" data-vi="Thành phần mô hình" data-en="Model Components">Thành phần mô hình</span>
-   <h4 data-vi="Thành phần mô hình & Cấu hình AI" data-en="AI Components & Configuration">Thành phần mô hình & Cấu hình AI</h4>
-   <ul>
-    <li><b>Tra cứu mặc định:</b> BM25 trên SQLite FTS5 (nhanh, nhẹ, giải thích được).</li>
-    <li><b>Nhánh nghiên cứu:</b> BGE-M3 embedding kết hợp mô hình phân cấp M0 (25,5%).</li>
-    <li><b>Tái xếp hạng:</b> LambdaRank v6 CPU (27,7%, McNemar p = 0,75).</li>
-    <li><b>Ứng dụng triển khai:</b> Bản 2.6.1 với 78 test pass, 9 skip.</li>
-   </ul>
-  </div>
-
-  <div class="canvas-cell">
-   <span class="tag">Dữ liệu huấn luyện</span>
-   <h4>Data Sources & Splits</h4>
-   <ul>
-    <li>967 văn bản thông báo XĐTMS (B04).</li>
-    <li>Cohort 605 ca đóng băng V5 (414 Train / 97 Valid / 94 Test).</li>
-    <li>Biểu thuế AHTN 2022 (11.414 dòng cấp 8 số - B05).</li>
-    <li>Kho tri thức V5 gồm 409 tài liệu với 16.061 đoạn văn bản.</li>
-   </ul>
-  </div>
-
-  <div class="canvas-cell">
-   <span class="tag" data-vi="Kết quả thực nghiệm" data-en="Empirical Results">Kết quả thực nghiệm</span>
-   <h4 data-vi="Thước đo đánh giá thực nghiệm (n=94 ca test)" data-en="Evaluation Metrics (n=94 test cases)">Thước đo đánh giá thực nghiệm (n=94 ca test)</h4>
-   <ul>
-    <li><b>BM25 baseline:</b> 0/94 ca đúng (lỗi kiểu dữ liệu float đã sửa ở D3).</li>
-    <li><b>Mô hình M0:</b> 24/94 ca đúng (25,5%).</li>
-    <li><b>Engine v6 LambdaRank:</b> 26/94 ca đúng (27,7%, p=0,75).</li>
-    <li><b>LLM một bước:</b> Chi phí ~240 đ/ca (B14).</li>
-    <li><b>Độ tin cậy:</b> 7 rủi ro chặn thương mại hóa cần kiểm soát trong pilot.</li>
-   </ul>
-  </div>
-
-  <div class="canvas-cell span-3">
-   <span class="tag">Giám sát con người & Điều kiện triển khai</span>
-   <h4>Human Oversight & Deployment Conditions</h4>
-   <p><b>Giám sát con người:</b> Quy trình phần mềm áp đặt cơ chế "Human-in-the-loop" bắt buộc. Chuyên viên tuân thủ phải xác nhận thuộc tính kỹ thuật, rà soát chú giải loại trừ và ký duyệt trước khi xuất hồ sơ. Chặn hoàn toàn tính năng tự động phê duyệt khi người lập trùng người duyệt.</p>
-   <p><b>Điều kiện triển khai:</b> Chỉ triển khai trong môi trường pilot có thỏa thuận bảo mật dữ liệu; hệ thống chạy trên máy chủ nội bộ hoặc đám mây riêng biệt; khóa toàn bộ manifest artifact để bảo đảm tính tái lập của kết quả phân loại.</p>
-  </div>
+ <div class="callout reveal">
+  <strong>Kết luận Go/No-Go theo Chương 9 (Mục 9.8):</strong>
+  Hệ thống được quyết định <b>GO</b> cho thử nghiệm pilot nội bộ có kiểm soát, với điều kiện lỗi biểu thuế (M4) và khóa API/RBAC (Ma1) được xử lý dứt điểm. Quyết định <b>NO-GO</b> cho thương mại hóa diện rộng cho đến khi đóng đủ 7 rủi ro cao và có hồ sơ đánh giá tác động theo Luật 91 và NĐ 356.
  </div>
 </div></section>
 </main>
@@ -1397,7 +1508,7 @@
   </div>
   <div>
    <h2>Lưu ý trách nhiệm pháp lý</h2>
-   <p style="font-size:13.5px;line-height:1.6">Kết quả từ mô hình AI chỉ mang tính chất tham khảo, hỗ trợ tra cứu và thu thập căn cứ. Người khai hải quan và chuyên viên tuân thủ chịu trách nhiệm hoàn toàn trước pháp luật theo Điều 18 và Điều 77 Luật Hải quan 2014.</p>
+   <p style="font-size:13.5px;line-height:1.6">Kết quả từ mô hình AI chỉ mang tính chất tham khảo, hỗ trợ tra cứu và thu thập căn cứ. Người khai hải quan và chuyên viên tuân thủ chịu trách nhiệm hoàn toàn trước pháp luật theo Điều 18 Luật Hải quan 2014 (lưu giữ hồ sơ 5 năm phục vụ kiểm tra sau thông quan).</p>
   </div>
  </div>
  <div class="footer-bottom">

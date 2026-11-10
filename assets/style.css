@@ -913,16 +913,18 @@ h1, h2, h3, h4, h5 { color: var(--ink); margin: 0; line-height: 1.18; }
   margin: 36px 0;
 }
 .stat-box {
-  padding: 32px 28px;
+  padding: 24px 16px;
   border-right: 1.5px solid var(--border);
 }
 .stat-box:last-child { border-right: none; }
 .stat-box .num {
   font-family: var(--font-serif);
-  font-size: clamp(38px, 4vw, 52px);
+  font-size: clamp(20px, 2vw, 28px);
   color: var(--ink);
-  line-height: 1;
+  line-height: 1.15;
   margin-bottom: 8px;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
 }
 .stat-box .lbl {
   font-size: 14px;
