@@ -1,6 +1,6 @@
 /**
  * HS Workspace — Interactive Scripts & Bilingual Engine
- * Nhóm 8 · Học phần Dự án Trí tuệ Nhân tạo · UEH · v2.2.1
+ * Nhóm 8 · Học phần Dự án Trí tuệ Nhân tạo · UEH · v2.6
  * Features: Clean Scroll Reveal, Top Reading Progress, 6-Step Workflow SVG Progress, 3-Task Demo Image Switcher, Bilingual Switcher
  */
 

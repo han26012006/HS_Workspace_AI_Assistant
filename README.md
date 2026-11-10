@@ -2,7 +2,7 @@
 **Đồ án học phần Dự án Trí tuệ Nhân tạo** (Mã lớp `26C1TEC55001302`) · **UEH**  
 **Giảng viên hướng dẫn:** ThS. Tạ Việt Phương  
 **Nhóm thực hiện:** Nhóm 8 (Nguyễn Đức Minh, Vương Nguyễn Ngọc Hân, Huỳnh Kỳ Quế, Đậu Thị Khánh Linh)  
-**Phiên bản:** Báo cáo đối chiếu Colab và ứng dụng v2.2.1 (04/11/2026)
+**Phiên bản:** Báo cáo đối chiếu Colab và ứng dụng v2.6 (04/11/2026)
 
 ---
 
